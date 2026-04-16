@@ -3,221 +3,174 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Syndic Efficace — Forward Copilot</title>
-  <meta name="description" content="Les prompts Copilot des gestionnaires de copropriété qui avancent.">
-  <meta property="og:title" content="Syndic Efficace — Les prompts Copilot des gestionnaires qui avancent">
-  <meta property="og:description" content="7 parcours métier, des situations réelles, des gains immédiats.">
-  <meta property="og:url" content="https://syndic-efficace.fr">
-  <meta property="og:type" content="website">
+  <title>LK-avocat — Droit de la copropriété & Transition énergétique</title>
+  <meta name="description" content="Cabinet LK-avocat, avocate spécialisée en droit de la copropriété et transition énergétique. Défense des copropriétaires, syndicats et syndics professionnels. Paris.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/lk-avocat.css">
 </head>
 <body>
-
-  <!-- HEADER -->
-  <header class="header">
-    <div class="container header__inner">
-      <a href="index.html" class="logo">
-        <span class="logo__chevron">›</span>
-        <span class="logo__text">FORWARD</span>
-      </a>
-      <a href="pack.html" class="btn btn--primary btn--sm">Accéder au pack — 29€</a>
+  <header class="lk-header" id="header">
+    <div class="container lk-header__inner">
+      <a href="index.html" class="lk-logo">LK<span class="lk-logo__line"></span><span style="font-size:.85rem;letter-spacing:.18em;font-weight:400;font-family:var(--font-sans)">AVOCAT</span></a>
+      <nav class="lk-nav">
+        <a href="cabinet.html">Le cabinet</a>
+        <a href="expertise-copropriete.html">Copropriété</a>
+        <a href="expertise-transition-energetique.html">Transition énergétique</a>
+        <a href="contact.html" class="btn btn--or" style="padding:.6rem 1.25rem;font-size:.82rem;">Prendre rendez-vous</a>
+      </nav>
+      <button class="lk-burger" id="burger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
     </div>
+    <nav class="lk-nav--mobile" id="nav-mobile">
+      <a href="cabinet.html">Le cabinet</a>
+      <a href="expertise-copropriete.html">Copropriété</a>
+      <a href="expertise-transition-energetique.html">Transition énergétique</a>
+      <a href="contact.html" class="btn btn--or">Prendre rendez-vous</a>
+    </nav>
   </header>
 
-  <!-- HERO -->
-  <section class="hero">
-    <div class="container hero__inner">
-      <p class="hero__eyebrow">Microsoft Copilot × Gestionnaires de copropriété</p>
-      <h1 class="hero__title">Les prompts Copilot des<br>gestionnaires qui avancent</h1>
-      <p class="hero__sub">Des situations réelles, des gains immédiats sur vos tâches quotidiennes.</p>
-
-      <!-- SEARCH BAR -->
-      <div class="search">
-        <svg class="search__icon" width="18" height="18" viewBox="0 0 24 24" fill="none"
-             stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-          <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
-        </svg>
-        <input class="search__input" type="text" placeholder="Disponible avec le pack complet" disabled>
-      </div>
-
-      <!-- STATS -->
-      <div class="hero__stats">
-        <div class="stat">
-          <span class="stat__val">7</span>
-          <span class="stat__lbl">parcours métier</span>
-        </div>
-        <div class="stat__sep"></div>
-        <div class="stat">
-          <span class="stat__val">5</span>
-          <span class="stat__lbl">outils couverts</span>
-        </div>
-        <div class="stat__sep"></div>
-        <div class="stat">
-          <span class="stat__val">29€</span>
-          <span class="stat__lbl">accès complet</span>
-        </div>
+  <section class="lk-hero">
+    <div class="lk-hero__deco"></div>
+    <div class="container lk-hero__inner">
+      <p class="lk-hero__tag reveal">Cabinet d'avocate — Droit de la copropriété</p>
+      <h1 class="lk-hero__title reveal reveal--delay-1">La copropriété<br><em>exige l'excellence.</em></h1>
+      <p class="lk-hero__sub reveal reveal--delay-2">Spécialisée en droit de la copropriété et transition énergétique, le cabinet LK-avocat vous accompagne dans chaque litige, chaque procédure, chaque décision qui engage l'avenir de votre immeuble.</p>
+      <div class="lk-hero__cta reveal reveal--delay-3">
+        <a href="contact.html" class="btn btn--or">Prendre rendez-vous</a>
+        <a href="cabinet.html" class="btn btn--ghost-white">Découvrir le cabinet →</a>
       </div>
     </div>
+    <div class="lk-hero__scroll"><div class="lk-hero__scroll-bar"></div><span>Défiler</span></div>
   </section>
 
-  <!-- PARCOURS -->
-  <main class="parcours-section">
+  <section class="lk-stats">
     <div class="container">
-      <h2 class="section-title">Choisissez votre parcours</h2>
-      <p class="section-sub">Chaque parcours couvre une situation réelle de votre quotidien.</p>
-
-      <div class="cards" id="cards-grid">
-
-        <!-- 1 -->
-        <div class="card">
-          <div class="card__top">
-            <span class="tool-pill tool-pill--outlook">Outlook</span>
-            <div class="card__badges">
-              <span class="badge badge--offered">2 offertes</span>
-            </div>
-          </div>
-          <h3 class="card__title">Traiter mes emails rapidement</h3>
-          <p class="card__desc">Triage, priorisation, réponses types et synthèse de fils complexes. Récupérez jusqu'à 90 minutes chaque matin.</p>
-          <div class="card__footer">
-            <span class="card__count">2 situations offertes — accès complet avec le pack</span>
-            <button class="btn btn--ghost btn--sm">Découvrir →</button>
-          </div>
-        </div>
-
-        <!-- 2 -->
-        <div class="card">
-          <div class="card__top">
-            <span class="tool-pill tool-pill--word">Word</span>
-            <div class="card__badges">
-              <span class="badge badge--offered">2 offertes</span>
-            </div>
-          </div>
-          <h3 class="card__title">Préparer une AG de A à Z</h3>
-          <p class="card__desc">Convocation conforme, ordre du jour, résolutions, PV et notification aux absents. Zéro vice de forme.</p>
-          <div class="card__footer">
-            <span class="card__count">2 situations offertes — accès complet avec le pack</span>
-            <button class="btn btn--ghost btn--sm">Découvrir →</button>
-          </div>
-        </div>
-
-        <!-- 3 -->
-        <div class="card">
-          <div class="card__top">
-            <span class="tool-pill tool-pill--outlook">Outlook</span>
-            <div class="card__badges">
-              <span class="badge badge--offered">2 offertes</span>
-            </div>
-          </div>
-          <h3 class="card__title">Gérer un sinistre de bout en bout</h3>
-          <p class="card__desc">De la déclaration à la clôture : qualification, coordination assureur, suivi prestataires.</p>
-          <div class="card__footer">
-            <span class="card__count">2 situations offertes — accès complet avec le pack</span>
-            <button class="btn btn--ghost btn--sm">Découvrir →</button>
-          </div>
-        </div>
-
-        <!-- 4 -->
-        <div class="card">
-          <div class="card__top">
-            <span class="tool-pill tool-pill--excel">Excel</span>
-            <div class="card__badges">
-              <span class="badge badge--offered">2 offertes</span>
-            </div>
-          </div>
-          <h3 class="card__title">Relancer et suivre mes impayés</h3>
-          <p class="card__desc">Du premier rappel amiable à la mise en demeure. Cycle complet, courriers conformes, gardes-fous juridiques.</p>
-          <div class="card__footer">
-            <span class="card__count">2 situations offertes — accès complet avec le pack</span>
-            <button class="btn btn--ghost btn--sm">Découvrir →</button>
-          </div>
-        </div>
-
-        <!-- 5 -->
-        <div class="card">
-          <div class="card__top">
-            <span class="tool-pill tool-pill--teams">Teams</span>
-            <div class="card__badges">
-              <span class="badge badge--offered">2 offertes</span>
-            </div>
-          </div>
-          <h3 class="card__title">Animer et restituer mes réunions</h3>
-          <p class="card__desc">Compte-rendu automatique, décisions extraites, actions assignées. Fini la corvée du lendemain.</p>
-          <div class="card__footer">
-            <span class="card__count">2 situations offertes — accès complet avec le pack</span>
-            <button class="btn btn--ghost btn--sm">Découvrir →</button>
-          </div>
-        </div>
-
-        <!-- 6 -->
-        <div class="card">
-          <div class="card__top">
-            <span class="tool-pill tool-pill--excel">Excel</span>
-            <div class="card__badges">
-              <span class="badge badge--offered">2 offertes</span>
-            </div>
-          </div>
-          <h3 class="card__title">Suivre mes échéances réglementaires</h3>
-          <p class="card__desc">PPT, DPE collectif, RNIC, fiche synthétique. Ne ratez plus aucune obligation légale.</p>
-          <div class="card__footer">
-            <span class="card__count">2 situations offertes — accès complet avec le pack</span>
-            <button class="btn btn--ghost btn--sm">Découvrir →</button>
-          </div>
-        </div>
-
-        <!-- 7 -->
-        <div class="card">
-          <div class="card__top">
-            <span class="tool-pill tool-pill--excel">Excel</span>
-            <div class="card__badges">
-              <span class="badge badge--offered">2 offertes</span>
-            </div>
-          </div>
-          <h3 class="card__title">Piloter mon portefeuille</h3>
-          <p class="card__desc">Tableau de bord 40 copros, bilan trimestriel, vue consolidée impayés et sinistres en un coup d'œil.</p>
-          <div class="card__footer">
-            <span class="card__count">2 situations offertes — accès complet avec le pack</span>
-            <button class="btn btn--ghost btn--sm">Découvrir →</button>
-          </div>
-        </div>
-
+      <div class="lk-stats__inner">
+        <div class="lk-stat reveal"><span class="lk-stat__val" data-count="15">0</span><span class="lk-stat__lbl">ans d'expérience</span></div>
+        <div class="lk-stat reveal reveal--delay-1"><span class="lk-stat__val" data-count="600">0</span><span class="lk-stat__lbl">dossiers traités</span></div>
+        <div class="lk-stat reveal reveal--delay-2"><span class="lk-stat__val" data-count="98">0</span><span class="lk-stat__lbl">% de clients satisfaits</span></div>
       </div>
-    </div>
-  </main>
-
-  <!-- CTA BAND -->
-  <section class="cta-band">
-    <div class="container cta-band__inner">
-      <div class="cta-band__text">
-        <p class="cta-band__title">Accédez aux 84 prompts en achat unique</p>
-        <p class="cta-band__sub">Mises à jour incluses. Zéro abonnement. Accès immédiat après paiement.</p>
-      </div>
-      <a href="#" class="btn btn--white">Obtenir le pack — 29€ →</a>
     </div>
   </section>
 
-  <!-- FOOTER -->
-  <footer class="footer">
-    <div class="container footer__inner">
-      <span class="footer__copy">© Forward — Consultant Microsoft Copilot</span>
-      <nav class="footer__nav">
+  <section class="lk-section lk-section--ivoire">
+    <div class="container">
+      <p class="eyebrow" style="display:block;text-align:center">Domaines d'intervention</p>
+      <h2 class="section-title reveal">Une expertise au cœur<br>du droit de la copropriété</h2>
+      <p class="section-sub reveal reveal--delay-1">Du contentieux à la transition énergétique, le cabinet intervient à chaque étape de la vie de votre copropriété.</p>
+      <div class="lk-cards">
+        <div class="lk-card reveal reveal--delay-1">
+          <div class="lk-card__icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg></div>
+          <h3 class="lk-card__title">Contentieux de la copropriété</h3>
+          <p class="lk-card__text">Litiges entre copropriétaires, actions contre le syndic, mise en cause du conseil syndical.</p>
+          <a href="expertise-copropriete.html" class="lk-card__link">En savoir plus →</a>
+        </div>
+        <div class="lk-card reveal reveal--delay-2">
+          <div class="lk-card__icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></div>
+          <h3 class="lk-card__title">Assemblées générales</h3>
+          <p class="lk-card__text">Contestation de résolutions, nullité d'AG, irrégularités de convocation. Conseil préventif.</p>
+          <a href="expertise-copropriete.html" class="lk-card__link">En savoir plus →</a>
+        </div>
+        <div class="lk-card reveal reveal--delay-3">
+          <div class="lk-card__icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></svg></div>
+          <h3 class="lk-card__title">Transition énergétique</h3>
+          <p class="lk-card__text">DPE collectif, Plan Pluriannuel de Travaux, MaPrimeRénov'. Conseil et contentieux.</p>
+          <a href="expertise-transition-energetique.html" class="lk-card__link">En savoir plus →</a>
+        </div>
+        <div class="lk-card reveal reveal--delay-4">
+          <div class="lk-card__icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg></div>
+          <h3 class="lk-card__title">Impayés de charges</h3>
+          <p class="lk-card__text">Recouvrement amiable et judiciaire. Injonction de payer, saisies immobilières.</p>
+          <a href="expertise-copropriete.html" class="lk-card__link">En savoir plus →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="lk-section lk-section--blanc">
+    <div class="container">
+      <div class="lk-feature">
+        <div class="lk-feature__content">
+          <div class="lk-feature__badge">Enjeu 2024–2026</div>
+          <h2 class="lk-feature__title reveal">La transition énergétique<br>redessine le droit<br>de la copropriété</h2>
+          <p class="lk-feature__text reveal reveal--delay-1">De nouvelles obligations légales transforment profondément la vie des copropriétés françaises : DPE collectif obligatoire, plans pluriannuels de travaux, interdiction de location des passoires thermiques.</p>
+          <ul class="lk-feature__list reveal reveal--delay-2">
+            <li>DPE collectif et audit énergétique obligatoires</li>
+            <li>Plan Pluriannuel de Travaux (PPT) — loi Climat &amp; Résilience</li>
+            <li>Accès aux aides MaPrimeRénov' Copropriétés</li>
+            <li>Contentieux liés aux travaux de rénovation</li>
+            <li>Responsabilité des syndics et prestataires</li>
+          </ul>
+          <a href="expertise-transition-energetique.html" class="btn btn--vert reveal reveal--delay-3">Découvrir notre expertise →</a>
+        </div>
+        <div class="lk-feature__visual reveal reveal--delay-2">
+          <div class="lk-feature__panel">
+            <p class="lk-feature__panel-title">Obligations en vigueur</p>
+            <div class="lk-feature__items">
+              <div class="lk-feature__item"><span class="lk-feature__item-dot"></span>DPE collectif — immeubles &gt; 200 lots (depuis 2024)</div>
+              <div class="lk-feature__item"><span class="lk-feature__item-dot"></span>DPE collectif — immeubles &gt; 50 lots (depuis 2025)</div>
+              <div class="lk-feature__item"><span class="lk-feature__item-dot"></span>Plan Pluriannuel de Travaux (PPT) — obligatoire depuis 2023</div>
+              <div class="lk-feature__item"><span class="lk-feature__item-dot"></span>Gel des loyers classés F &amp; G depuis 2022</div>
+              <div class="lk-feature__item"><span class="lk-feature__item-dot"></span>Interdiction de louer les G depuis 2025</div>
+            </div>
+            <p class="lk-feature__panel-note">Sources : Loi Climat &amp; Résilience 2021, décret DPE 2022–2023</p>
+          </div>
+          <div class="lk-feature__float"><div class="lk-feature__float-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#1E3A2F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>Conseil juridique dédié</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="lk-section lk-section--ivoire">
+    <div class="container">
+      <p class="eyebrow" style="display:block;text-align:center">Comment ça fonctionne</p>
+      <h2 class="section-title reveal">Votre dossier, étape par étape</h2>
+      <p class="section-sub reveal reveal--delay-1">Un accompagnement structuré, de la première consultation jusqu'à la résolution de votre litige.</p>
+      <div class="lk-process" style="margin-top:1rem">
+        <div class="lk-step reveal"><div class="lk-step__num">1</div><div><h3 class="lk-step__title">Consultation</h3><p class="lk-step__text">Première rencontre pour analyser votre situation et définir la stratégie adaptée.</p></div></div>
+        <div class="lk-step reveal reveal--delay-1"><div class="lk-step__num">2</div><div><h3 class="lk-step__title">Analyse &amp; Stratégie</h3><p class="lk-step__text">Étude approfondie des pièces, choix de la voie amiable ou contentieuse.</p></div></div>
+        <div class="lk-step reveal reveal--delay-2"><div class="lk-step__num">3</div><div><h3 class="lk-step__title">Action &amp; Résolution</h3><p class="lk-step__text">Mise en œuvre des actes, représentation en justice. Suivi jusqu'à l'issue favorable.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="lk-section lk-section--blanc">
+    <div class="container">
+      <p class="eyebrow" style="display:block;text-align:center">Témoignages</p>
+      <h2 class="section-title reveal">Ils nous font confiance</h2>
+      <div class="lk-testimonials" style="margin-top:1.5rem">
+        <div class="lk-testimonial reveal"><p class="lk-testimonial__quote">"</p><p class="lk-testimonial__text">Le cabinet nous a accompagnés dans la contestation d'une résolution d'AG irrégulière. Résultat obtenu en 4 mois.</p><div class="lk-testimonial__author"><div class="lk-testimonial__avatar">P.M</div><div><p class="lk-testimonial__name">Pierre M.</p><p class="lk-testimonial__role">Copropriétaire, Paris 11e</p></div></div></div>
+        <div class="lk-testimonial reveal reveal--delay-1"><p class="lk-testimonial__quote">"</p><p class="lk-testimonial__text">Grâce au cabinet, notre syndicat a pu sécuriser le vote du PPT et obtenir les subventions MaPrimeRénov'.</p><div class="lk-testimonial__author"><div class="lk-testimonial__avatar">S.L</div><div><p class="lk-testimonial__name">Sophie L.</p><p class="lk-testimonial__role">Présidente de conseil syndical, Lyon</p></div></div></div>
+        <div class="lk-testimonial reveal reveal--delay-2"><p class="lk-testimonial__quote">"</p><p class="lk-testimonial__text">Dossier d'impayés complexe, 3 ans de charges dues. Recouvrement intégral obtenu en 6 mois.</p><div class="lk-testimonial__author"><div class="lk-testimonial__avatar">A.R</div><div><p class="lk-testimonial__name">Alexandre R.</p><p class="lk-testimonial__role">Syndic professionnel, Bordeaux</p></div></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="lk-cta">
+    <div class="container"><div class="lk-cta__inner">
+      <p class="eyebrow">Contact</p>
+      <h2 class="lk-cta__title reveal">Votre situation mérite<br>une réponse précise.</h2>
+      <p class="lk-cta__sub reveal reveal--delay-1">Premier entretien de 30 minutes pour évaluer votre dossier.</p>
+      <div class="lk-cta__btns reveal reveal--delay-2"><a href="contact.html" class="btn btn--or">Prendre rendez-vous</a><a href="contact.html" class="btn btn--ghost-white">Nous écrire →</a></div>
+    </div></div>
+  </section>
+
+  <footer class="lk-footer">
+    <div class="container lk-footer__inner">
+      <a href="index.html" class="lk-footer__logo">LK-avocat</a>
+      <nav class="lk-footer__nav">
+        <a href="cabinet.html">Le cabinet</a>
+        <a href="expertise-copropriete.html">Copropriété</a>
+        <a href="expertise-transition-energetique.html">Transition énergétique</a>
+        <a href="contact.html">Contact</a>
         <a href="mentions-legales.html">Mentions légales</a>
-        <a href="politique-confidentialite.html">Politique de confidentialité</a>
-        <a href="mailto:contact@forward-copilot.fr">Contact</a>
       </nav>
     </div>
+    <div class="container"><p class="lk-footer__copy">© 2025 LK-avocat — Tous droits réservés.</p></div>
   </footer>
 
-  <!-- COOKIE BANNER -->
-  <div class="cookie-banner" id="cookie-banner" role="alert" aria-live="polite">
-    <p class="cookie-banner__text">
-      Ce site n'utilise pas de cookies de tracking. Aucune donnée personnelle n'est collectée sans votre consentement.
-    </p>
-    <button class="cookie-banner__btn" id="cookie-accept">J'ai compris</button>
-  </div>
-
-  <script src="js/app.js"></script>
+  <div class="lk-cookie" id="cookie-banner"><p>Ce site utilise uniquement des cookies fonctionnels essentiels.</p><button class="lk-cookie__btn" id="cookie-accept">J'ai compris</button></div>
+  <script src="js/lk-avocat.js"></script>
 </body>
 </html>
