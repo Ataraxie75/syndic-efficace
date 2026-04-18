@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact & Rendez-vous — LK-avocat</title>
+  <meta name="description" content="Prenez rendez-vous avec le cabinet LK-avocat, avocate spécialisée en droit de la copropriété et transition énergétique. Paris.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/lk-avocat.css">
+  <style>
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 420px;
+      gap: 4rem;
+      align-items: start;
+    }
+    .contact-info { display: flex; flex-direction: column; gap: 2rem; }
+    .contact-block {
+      display: flex;
+      gap: 1rem;
+      align-items: flex-start;
+    }
+    .contact-block__icon {
+      width: 44px; height: 44px;
+      background: var(--lk-vert-clair);
+      border-radius: var(--radius);
+      display: flex; align-items: center; justify-content: center;
+      color: var(--lk-vert);
+      flex-shrink: 0;
+    }
+    .contact-block__label {
+      font-size: .72rem;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: .1em;
+      color: var(--lk-gris-clair);
+      margin-bottom: .25rem;
+    }
+    .contact-block__val {
+      font-size: .95rem;
+      color: var(--lk-texte);
+      font-weight: 500;
+    }
+    .contact-block__val a { color: var(--lk-vert); transition: color var(--transition); }
+    .contact-block__val a:hover { color: var(--lk-or); }
+    .contact-hours { margin-top: .5rem; font-size: .82rem; color: var(--lk-gris); line-height: 1.8; }
+    .form-card {
+      background: var(--lk-blanc);
+      border: 1px solid var(--lk-bordure);
+      border-radius: var(--radius-lg);
+      padding: 2.5rem 2rem;
+      box-shadow: var(--shadow);
+    }
+    .form-card h2 {
+      font-size: 1.5rem;
+      color: var(--lk-vert);
+      margin-bottom: .5rem;
+    }
+    .form-card p { font-size: .875rem; color: var(--lk-gris); margin-bottom: 2rem; line-height: 1.6; }
+    @media (max-width: 860px) {
+      .contact-grid { grid-template-columns: 1fr; }
+      .form-card { order: -1; }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="lk-header" id="header">
+    <div class="container lk-header__inner">
+      <a href="index.html" class="lk-logo">LK<span class="lk-logo__line"></span><span style="font-size:.85rem;letter-spacing:.18em;font-weight:400;font-family:var(--font-sans)">AVOCAT</span></a>
+      <nav class="lk-nav">
+        <a href="cabinet.html">Le cabinet</a>
+        <a href="expertise-copropriete.html">Copropriété</a>
+        <a href="expertise-transition-energetique.html">Transition énergétique</a>
+        <a href="contact.html" class="btn btn--or" style="padding:.6rem 1.25rem;font-size:.82rem;">Prendre rendez-vous</a>
+      </nav>
+      <button class="lk-burger" id="burger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+    <nav class="lk-nav--mobile" id="nav-mobile">
+      <a href="cabinet.html">Le cabinet</a>
+      <a href="expertise-copropriete.html">Copropriété</a>
+      <a href="expertise-transition-energetique.html">Transition énergétique</a>
+      <a href="contact.html" class="btn btn--or">Prendre rendez-vous</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="lk-page-hero">
+    <div class="container lk-page-hero__inner">
+      <nav class="lk-breadcrumb">
+        <a href="index.html">Accueil</a>
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
+        <span>Contact</span>
+      </nav>
+      <p class="eyebrow">Contact</p>
+      <h1>Prenons rendez-vous.</h1>
+      <p>Premier entretien de 30 minutes pour évaluer votre situation et définir la stratégie la plus adaptée à votre dossier.</p>
+    </div>
+  </section>
+
+  <!-- FORMULAIRE + INFOS -->
+  <section class="lk-section lk-section--ivoire">
+    <div class="container">
+      <div class="contact-grid">
+
+        <!-- Infos -->
+        <div class="contact-info">
+          <div>
+            <p class="eyebrow">Le cabinet</p>
+            <h2 style="font-family:var(--font-serif);font-size:2rem;color:var(--lk-vert);margin-bottom:1rem">LK-avocat</h2>
+            <p style="color:var(--lk-gris);font-size:.95rem;line-height:1.75;max-width:420px">Avocate au Barreau de Paris, spécialisée en droit de la copropriété et transition énergétique. Disponible pour vous accompagner dans chaque étape de votre dossier.</p>
+          </div>
+
+          <div class="contact-block reveal">
+            <div class="contact-block__icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div>
+              <p class="contact-block__label">Adresse</p>
+              <p class="contact-block__val">[Adresse du cabinet]<br>[Code postal] Paris</p>
+            </div>
+          </div>
+
+          <div class="contact-block reveal reveal--delay-1">
+            <div class="contact-block__icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.25h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.8A16 16 0 0 0 15.2 16.1l.96-.96a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            </div>
+            <div>
+              <p class="contact-block__label">Téléphone</p>
+              <p class="contact-block__val"><a href="tel:+33100000000">01 XX XX XX XX</a></p>
+              <p class="contact-hours">Lundi – Vendredi : 9h – 18h<br>Permanence téléphonique : 9h30 – 12h30</p>
+            </div>
+          </div>
+
+          <div class="contact-block reveal reveal--delay-2">
+            <div class="contact-block__icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <div>
+              <p class="contact-block__label">Email</p>
+              <p class="contact-block__val"><a href="mailto:contact@lk-avocat.fr">contact@lk-avocat.fr</a></p>
+              <p class="contact-hours">Réponse sous 24h ouvrées</p>
+            </div>
+          </div>
+
+          <div class="reveal reveal--delay-3" style="background:var(--lk-vert-clair);border-radius:var(--radius);padding:1.25rem 1.5rem">
+            <p style="font-size:.82rem;font-weight:500;color:var(--lk-vert);margin-bottom:.35rem">Premier entretien</p>
+            <p style="font-size:.875rem;color:var(--lk-gris);line-height:1.7">30 minutes pour analyser votre dossier et vous proposer une stratégie adaptée. Entretien en cabinet, par téléphone ou en visioconférence.</p>
+          </div>
+        </div>
+
+        <!-- Formulaire -->
+        <div class="form-card reveal reveal--delay-1">
+          <h2>Votre message</h2>
+          <p>Décrivez brièvement votre situation. Nous vous répondons sous 24h.</p>
+          <form class="lk-form" id="lk-contact-form" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+            <input type="hidden" name="form-name" value="contact">
+            <p style="display:none"><label>Ne pas remplir : <input name="bot-field"></label></p>
+            <div class="lk-form__row">
+              <div class="lk-form__group">
+                <label for="prenom">Prénom *</label>
+                <input type="text" id="prenom" name="prenom" required autocomplete="given-name" placeholder="Marie">
+              </div>
+              <div class="lk-form__group">
+                <label for="nom">Nom *</label>
+                <input type="text" id="nom" name="nom" required autocomplete="family-name" placeholder="Dupont">
+              </div>
+            </div>
+            <div class="lk-form__group">
+              <label for="email">Email *</label>
+              <input type="email" id="email" name="email" required autocomplete="email" placeholder="marie@exemple.fr">
+            </div>
+            <div class="lk-form__group">
+              <label for="telephone">Téléphone</label>
+              <input type="tel" id="telephone" name="telephone" autocomplete="tel" placeholder="06 XX XX XX XX">
+            </div>
+            <div class="lk-form__group">
+              <label for="sujet">Objet de votre demande *</label>
+              <select id="sujet" name="sujet" required>
+                <option value="" disabled selected>Sélectionnez un sujet</option>
+                <option>Contentieux de copropriété</option>
+                <option>Assemblée générale</option>
+                <option>Impayés de charges</option>
+                <option>Transition énergétique / DPE</option>
+                <option>Plan Pluriannuel de Travaux</option>
+                <option>Règlement de copropriété</option>
+                <option>Autre</option>
+              </select>
+            </div>
+            <div class="lk-form__group">
+              <label for="message">Votre message *</label>
+              <textarea id="message" name="message" required placeholder="Décrivez brièvement votre situation…"></textarea>
+            </div>
+            <p class="lk-form__note">* Champs obligatoires. Vos données sont traitées conformément à notre <a href="politique-confidentialite.html" style="color:var(--lk-vert);text-decoration:underline">politique de confidentialité</a>. Elles ne sont jamais transmises à des tiers.</p>
+            <button type="submit" class="btn btn--vert">Envoyer le message →</button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="lk-footer">
+    <div class="container lk-footer__inner">
+      <a href="index.html" class="lk-footer__logo">LK-avocat</a>
+      <nav class="lk-footer__nav">
+        <a href="cabinet.html">Le cabinet</a>
+        <a href="expertise-copropriete.html">Copropriété</a>
+        <a href="expertise-transition-energetique.html">Transition énergétique</a>
+        <a href="contact.html">Contact</a>
+        <a href="mentions-legales.html">Mentions légales</a>
+      </nav>
+    </div>
+    <div class="container">
+      <p class="lk-footer__copy">© 2025 LK-avocat — Tous droits réservés. Les informations contenues sur ce site ne constituent pas un conseil juridique.</p>
+    </div>
+  </footer>
+
+  <div class="lk-cookie is-hidden" id="cookie-banner" role="alert">
+    <p>Ce site utilise uniquement des cookies fonctionnels essentiels. Aucun tracking publicitaire.</p>
+    <button class="lk-cookie__btn" id="cookie-accept">J'ai compris</button>
+  </div>
+  <script src="js/lk-avocat.js"></script>
+</body>
+</html>
