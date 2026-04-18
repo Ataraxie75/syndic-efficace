@@ -119,7 +119,7 @@
             </div>
             <div>
               <p class="contact-block__label">Adresse</p>
-              <p class="contact-block__val">[Adresse du cabinet]<br>[Code postal] Paris</p>
+              <p class="contact-block__val"><span data-cms="contact.adresse_1">[Adresse du cabinet]</span><br><span data-cms="contact.adresse_2">[Code postal] Paris</span></p>
             </div>
           </div>
 
@@ -129,8 +129,8 @@
             </div>
             <div>
               <p class="contact-block__label">Téléphone</p>
-              <p class="contact-block__val"><a href="tel:+33100000000">01 XX XX XX XX</a></p>
-              <p class="contact-hours">Lundi – Vendredi : 9h – 18h<br>Permanence téléphonique : 9h30 – 12h30</p>
+              <p class="contact-block__val"><a data-cms-attr="contact.telephone_href|href" href="tel:+33100000000" data-cms="contact.telephone">01 XX XX XX XX</a></p>
+              <p class="contact-hours"><span data-cms="contact.horaires_bureau">Lundi – Vendredi : 9h – 18h</span><br><span data-cms="contact.horaires_permanence">Permanence téléphonique : 9h30 – 12h30</span></p>
             </div>
           </div>
 
@@ -140,7 +140,7 @@
             </div>
             <div>
               <p class="contact-block__label">Email</p>
-              <p class="contact-block__val"><a href="mailto:contact@lk-avocat.fr">contact@lk-avocat.fr</a></p>
+              <p class="contact-block__val"><a data-cms-attr="contact.email|href" href="mailto:contact@lk-avocat.fr" data-cms="contact.email">contact@lk-avocat.fr</a></p>
               <p class="contact-hours">Réponse sous 24h ouvrées</p>
             </div>
           </div>
@@ -222,6 +222,7 @@
     <p>Ce site utilise uniquement des cookies fonctionnels essentiels. Aucun tracking publicitaire.</p>
     <button class="lk-cookie__btn" id="cookie-accept">J'ai compris</button>
   </div>
+  <script src="js/cms-loader.js"></script>
   <script src="js/lk-avocat.js"></script>
 </body>
 </html>

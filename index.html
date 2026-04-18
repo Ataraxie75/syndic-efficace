@@ -79,16 +79,16 @@
     <div class="container">
       <div class="lk-stats__inner">
         <div class="lk-stat reveal">
-          <span class="lk-stat__val" data-count="15">0</span>
-          <span class="lk-stat__lbl">ans d'expérience</span>
+          <span class="lk-stat__val" data-count="15" data-cms-count="stats.stat_1_val">0</span>
+          <span class="lk-stat__lbl" data-cms="stats.stat_1_lbl">ans d'expérience</span>
         </div>
         <div class="lk-stat reveal reveal--delay-1">
-          <span class="lk-stat__val" data-count="600">0</span>
-          <span class="lk-stat__lbl">dossiers traités</span>
+          <span class="lk-stat__val" data-count="600" data-cms-count="stats.stat_2_val">0</span>
+          <span class="lk-stat__lbl" data-cms="stats.stat_2_lbl">dossiers traités</span>
         </div>
         <div class="lk-stat reveal reveal--delay-2">
-          <span class="lk-stat__val" data-count="98">0</span>
-          <span class="lk-stat__lbl">% de clients satisfaits</span>
+          <span class="lk-stat__val" data-count="98" data-cms-count="stats.stat_3_val">0</span>
+          <span class="lk-stat__lbl" data-cms="stats.stat_3_lbl">% de clients satisfaits</span>
         </div>
       </div>
     </div>
@@ -243,36 +243,36 @@
 
         <div class="lk-testimonial reveal">
           <p class="lk-testimonial__quote" aria-hidden="true">"</p>
-          <p class="lk-testimonial__text">Le cabinet nous a accompagnés dans la contestation d'une résolution d'AG irrégulière. Réactivité, clarté des explications et résultat obtenu en 4 mois. Je recommande sans hésitation.</p>
+          <p class="lk-testimonial__text" data-cms="temoignages.t1_texte">Le cabinet nous a accompagnés dans la contestation d'une résolution d'AG irrégulière. Réactivité, clarté des explications et résultat obtenu en 4 mois. Je recommande sans hésitation.</p>
           <div class="lk-testimonial__author">
-            <div class="lk-testimonial__avatar" aria-hidden="true">P.M</div>
+            <div class="lk-testimonial__avatar" aria-hidden="true" data-cms="temoignages.t1_initiales">P.M</div>
             <div>
-              <p class="lk-testimonial__name">Pierre M.</p>
-              <p class="lk-testimonial__role">Copropriétaire, Paris 11e</p>
+              <p class="lk-testimonial__name" data-cms="temoignages.t1_nom">Pierre M.</p>
+              <p class="lk-testimonial__role" data-cms="temoignages.t1_role">Copropriétaire, Paris 11e</p>
             </div>
           </div>
         </div>
 
         <div class="lk-testimonial reveal reveal--delay-1">
           <p class="lk-testimonial__quote" aria-hidden="true">"</p>
-          <p class="lk-testimonial__text">Grâce au conseil juridique du cabinet, notre syndicat a pu sécuriser le vote du PPT et obtenir les subventions MaPrimeRénov'. Une expertise rare sur ces sujets énergétiques.</p>
+          <p class="lk-testimonial__text" data-cms="temoignages.t2_texte">Grâce au conseil juridique du cabinet, notre syndicat a pu sécuriser le vote du PPT et obtenir les subventions MaPrimeRénov'. Une expertise rare sur ces sujets énergétiques.</p>
           <div class="lk-testimonial__author">
-            <div class="lk-testimonial__avatar" aria-hidden="true">S.L</div>
+            <div class="lk-testimonial__avatar" aria-hidden="true" data-cms="temoignages.t2_initiales">S.L</div>
             <div>
-              <p class="lk-testimonial__name">Sophie L.</p>
-              <p class="lk-testimonial__role">Présidente de conseil syndical, Lyon</p>
+              <p class="lk-testimonial__name" data-cms="temoignages.t2_nom">Sophie L.</p>
+              <p class="lk-testimonial__role" data-cms="temoignages.t2_role">Présidente de conseil syndical, Lyon</p>
             </div>
           </div>
         </div>
 
         <div class="lk-testimonial reveal reveal--delay-2">
           <p class="lk-testimonial__quote" aria-hidden="true">"</p>
-          <p class="lk-testimonial__text">Dossier d'impayés complexe, 3 ans de charges dues. Le cabinet a obtenu le recouvrement intégral en 6 mois. Professionnalisme et détermination exemplaires.</p>
+          <p class="lk-testimonial__text" data-cms="temoignages.t3_texte">Dossier d'impayés complexe, 3 ans de charges dues. Le cabinet a obtenu le recouvrement intégral en 6 mois. Professionnalisme et détermination exemplaires.</p>
           <div class="lk-testimonial__author">
-            <div class="lk-testimonial__avatar" aria-hidden="true">A.R</div>
+            <div class="lk-testimonial__avatar" aria-hidden="true" data-cms="temoignages.t3_initiales">A.R</div>
             <div>
-              <p class="lk-testimonial__name">Alexandre R.</p>
-              <p class="lk-testimonial__role">Syndic professionnel, Bordeaux</p>
+              <p class="lk-testimonial__name" data-cms="temoignages.t3_nom">Alexandre R.</p>
+              <p class="lk-testimonial__role" data-cms="temoignages.t3_role">Syndic professionnel, Bordeaux</p>
             </div>
           </div>
         </div>
@@ -319,6 +319,7 @@
     <button class="lk-cookie__btn" id="cookie-accept">J'ai compris</button>
   </div>
 
+  <script src="js/cms-loader.js"></script>
   <script src="js/lk-avocat.js"></script>
 </body>
 </html>

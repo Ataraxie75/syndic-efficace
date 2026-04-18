@@ -51,14 +51,14 @@
       <div class="lk-feature">
         <div class="lk-feature__content">
           <p class="eyebrow">L'avocate</p>
-          <h2 class="lk-feature__title reveal">Maître [Prénom Nom],<br>avocate au Barreau de Paris</h2>
-          <p class="lk-feature__text reveal reveal--delay-1">
+          <h2 class="lk-feature__title reveal"><span data-cms="avocate.nom">Maître [Prénom Nom]</span>,<br>avocate au Barreau de Paris</h2>
+          <p class="lk-feature__text reveal reveal--delay-1" data-cms="avocate.bio_1">
             Titulaire d'un Master II en droit immobilier, Maître [Nom] a construit son expertise au fil de plus de quinze ans de pratique exclusive du droit de la copropriété. Passionnée par les mutations que traverse l'immobilier français — en premier lieu la transition énergétique — elle conseille et représente aussi bien les copropriétaires individuels que les syndicats de copropriété et les syndics professionnels.
           </p>
-          <p class="lk-feature__text reveal reveal--delay-2">
+          <p class="lk-feature__text reveal reveal--delay-2" data-cms="avocate.bio_2">
             Pédagogue et rigoureuse, elle s'attache à exposer les enjeux dans un langage accessible, sans jamais sacrifier la précision juridique qui fait la différence entre gagner et perdre un dossier.
           </p>
-          <ul class="lk-feature__list reveal reveal--delay-3">
+          <ul class="lk-feature__list reveal reveal--delay-3" id="cms-diplomes">
             <li>Master II Droit immobilier — Université Paris I Panthéon-Sorbonne</li>
             <li>Barreau de Paris — inscrite depuis [année]</li>
             <li>Membre de l'AJIB (Association des Juristes de l'Immeuble et du Bâti)</li>
@@ -69,8 +69,8 @@
           <div class="lk-feature__panel" style="min-height:380px;display:flex;flex-direction:column;justify-content:flex-end">
             <div style="position:absolute;inset:0;background:linear-gradient(135deg,rgba(30,58,47,.4) 0%,rgba(30,58,47,.85) 100%);border-radius:var(--radius-lg)"></div>
             <div style="position:relative;z-index:1">
-              <p style="font-family:var(--font-serif);font-size:1.6rem;font-weight:600;color:var(--lk-blanc);margin-bottom:.25rem">Maître [Prénom Nom]</p>
-              <p style="color:var(--lk-or);font-size:.82rem;letter-spacing:.08em;font-weight:500">Avocate au Barreau de Paris</p>
+              <p style="font-family:var(--font-serif);font-size:1.6rem;font-weight:600;color:var(--lk-blanc);margin-bottom:.25rem" data-cms="avocate.nom">Maître [Prénom Nom]</p>
+              <p style="color:var(--lk-or);font-size:.82rem;letter-spacing:.08em;font-weight:500" data-cms="avocate.titre">Avocate au Barreau de Paris</p>
             </div>
           </div>
         </div>
@@ -144,6 +144,7 @@
     <p>Ce site utilise uniquement des cookies fonctionnels essentiels. Aucun tracking publicitaire.</p>
     <button class="lk-cookie__btn" id="cookie-accept">J'ai compris</button>
   </div>
+  <script src="js/cms-loader.js"></script>
   <script src="js/lk-avocat.js"></script>
 </body>
 </html>
