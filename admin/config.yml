@@ -5,6 +5,7 @@ backend:
 media_folder: "img"
 public_folder: "/img"
 locale: "fr"
+# Cache bust: 2025-05-03-1
 
 collections:
   - name: "contenu"
