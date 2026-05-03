@@ -30,13 +30,15 @@
   "form_tel_placeholder": "06 XX XX XX XX",
   "form_sujet_label": "Objet de votre demande *",
   "form_sujet_default": "Sélectionnez un sujet",
-  "form_sujet_opt_1": "Contentieux de copropriété",
-  "form_sujet_opt_2": "Assemblée générale",
-  "form_sujet_opt_3": "Impayés de charges",
-  "form_sujet_opt_4": "Transition énergétique / DPE",
-  "form_sujet_opt_5": "Plan Pluriannuel de Travaux",
-  "form_sujet_opt_6": "Règlement de copropriété",
-  "form_sujet_opt_7": "Autre",
+  "form_sujet_options": [
+    "Contentieux de copropriété",
+    "Assemblée générale",
+    "Impayés de charges",
+    "Transition énergétique / DPE",
+    "Plan Pluriannuel de Travaux",
+    "Règlement de copropriété",
+    "Autre"
+  ],
   "form_message_label": "Votre message *",
   "form_message_placeholder": "Décrivez brièvement votre situation…",
   "form_submit_label": "Envoyer le message →"

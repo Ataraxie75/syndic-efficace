@@ -50,6 +50,18 @@
       .join('');
   }
 
+  // Options du menu déroulant "Sujet" (formulaire contact)
+  const sujetSelect = document.getElementById('sujet');
+  if (sujetSelect && Array.isArray(data.contact?.form_sujet_options)) {
+    while (sujetSelect.options.length > 1) sujetSelect.remove(1);
+    data.contact.form_sujet_options.forEach(opt => {
+      const o = document.createElement('option');
+      o.textContent = opt;
+      o.value = opt;
+      sujetSelect.appendChild(o);
+    });
+  }
+
   // Photo avocate
   const photoEl = document.getElementById('cms-photo-avocate');
   if (photoEl && data.avocate?.photo) {
