@@ -1,10 +1,25 @@
 {
   "hero_eyebrow": "Enjeu 2024–2026",
-  "hero_titre": "Transition énergétique & copropriété",
+  "hero_titre_l1": "Transition énergétique",
+  "hero_titre_l2": "& copropriété",
   "hero_sous_titre": "DPE collectif, Plan Pluriannuel de Travaux, MaPrimeRénov'… De nouvelles obligations légales transforment en profondeur la vie des copropriétés. Le cabinet vous guide et vous défend.",
-  "intro_titre": "Un cadre légal nouveau, des sanctions réelles",
+  "intro_eyebrow": "Pourquoi c'est urgent",
+  "intro_titre_l1": "Un cadre légal nouveau,",
+  "intro_titre_l2": "des sanctions réelles",
   "intro_texte_1": "La loi Climat & Résilience du 22 août 2021 a profondément reconfiguré les obligations des copropriétés en matière énergétique. Ces nouvelles règles ne sont pas anodines : leur méconnaissance expose les copropriétaires, les syndicats et les syndics à des responsabilités juridiques concrètes.",
   "intro_texte_2": "Le cabinet LK-avocat accompagne les copropriétés dans la compréhension et l'application de ces textes, et intervient en contentieux lorsque des litiges surgissent autour de la rénovation énergétique.",
+  "intro_cta_label": "Consulter le cabinet →",
+  "calendrier_titre": "Calendrier des obligations",
+  "calendrier_item_1": "2022 — Gel des loyers des passoires F & G",
+  "calendrier_item_2": "2023 — PPT obligatoire pour tous les immeubles",
+  "calendrier_item_3": "2024 — DPE collectif > 200 lots obligatoire",
+  "calendrier_item_4": "2025 — DPE collectif > 50 lots / Interdiction location G",
+  "calendrier_item_5": "2028 — Interdiction de location des F",
+  "calendrier_note": "Sources : Loi Climat & Résilience 2021 · Décrets DPE 2022–2023",
+  "domaines_eyebrow": "Nos interventions",
+  "domaines_titre_l1": "Conseil & contentieux",
+  "domaines_titre_l2": "en transition énergétique",
+  "domaines_sous_titre": "Du conseil préventif à la défense de vos droits en justice, le cabinet intervient à chaque étape.",
   "cartes": {
     "c1_titre": "DPE collectif",
     "c1_texte": "Conseil sur l'obligation de réaliser le Diagnostic de Performance Énergétique collectif. Recours en cas de DPE contesté ou de litige avec le prestataire diagnostiqueur.",
@@ -19,6 +34,9 @@
     "c6_titre": "Responsabilité du syndic",
     "c6_texte": "Action en responsabilité contre le syndic qui n'a pas fait voter le PPT obligatoire, n'a pas engagé le DPE collectif ou a mal géré les aides publiques à la rénovation."
   },
+  "faq_eyebrow": "Questions fréquentes",
+  "faq_titre_l1": "Vos questions sur",
+  "faq_titre_l2": "la transition énergétique",
   "faq": {
     "q1_question": "Mon immeuble est-il concerné par le DPE collectif ?",
     "q1_reponse": "Tous les immeubles en copropriété sont potentiellement concernés. Les immeubles de plus de 200 lots devaient réaliser leur DPE collectif avant le 1er janvier 2024. Ceux de 50 à 200 lots, avant le 1er janvier 2025. Les immeubles de moins de 50 lots ont jusqu'au 1er janvier 2026. Le défaut de réalisation peut engager la responsabilité du syndic.",
@@ -31,6 +49,9 @@
     "q5_question": "Mon appartement classé G est interdit à la location. Quels sont mes recours ?",
     "q5_reponse": "Depuis le 1er janvier 2025, les logements classés G ne peuvent plus faire l'objet d'un nouveau contrat de location. Si le classement vous semble erroné, une contestation du DPE est possible dans les 6 mois. Des dispositifs d'aide à la rénovation (MaPrimeRénov') permettent de financer les travaux nécessaires. Le cabinet vous accompagne dans ces démarches."
   },
-  "cta_titre": "La rénovation de votre immeuble commence par un conseil juridique.",
-  "cta_sous_titre": "Anticipez les obligations, sécurisez vos décisions, protégez vos investissements."
+  "cta_titre_l1": "La rénovation de votre immeuble",
+  "cta_titre_l2": "commence par un conseil juridique.",
+  "cta_sous_titre": "Anticipez les obligations, sécurisez vos décisions, protégez vos investissements.",
+  "cta_btn_1_label": "Prendre rendez-vous",
+  "cta_link_label": "Voir le droit de la copropriété →"
 }

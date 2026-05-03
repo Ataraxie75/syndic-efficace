@@ -1,6 +1,11 @@
 {
+  "page_eyebrow": "Expertise",
   "hero_titre": "Droit de la copropriété",
   "hero_sous_titre": "Du contentieux entre copropriétaires à la sécurisation des assemblées générales, une expertise complète fondée sur la loi du 10 juillet 1965.",
+  "domaines_eyebrow": "Domaines d'intervention",
+  "domaines_titre_l1": "Nos interventions",
+  "domaines_titre_l2": "en droit de la copropriété",
+  "domaines_sous_titre": "Le cabinet intervient à tous les stades de la vie juridique de votre copropriété, en conseil comme en contentieux.",
   "cartes": {
     "c1_titre": "Contentieux entre copropriétaires",
     "c1_texte": "Nuisances, troubles de jouissance, empiètements, travaux non autorisés, non-respect du règlement de copropriété. Représentation devant le Tribunal judiciaire.",
@@ -15,7 +20,26 @@
     "c6_titre": "Parties communes & privatives",
     "c6_texte": "Délimitation des parties communes, usage abusif, appropriation illicite, servitudes. Défense de vos droits sur les espaces communs et sur votre lot privatif."
   },
+  "cadre_eyebrow": "Cadre légal",
+  "cadre_titre_l1": "Maîtriser les textes",
+  "cadre_titre_l2": "qui régissent votre",
+  "cadre_titre_l3": "copropriété",
   "cadre_texte": "Le droit de la copropriété est un droit technique, fondé sur des textes complexes et en constante évolution. La maîtrise de ce cadre est le fondement de chaque stratégie déployée par le cabinet.",
+  "cadre_list_1": "Loi du 10 juillet 1965 fixant le statut de la copropriété",
+  "cadre_list_2": "Décret du 17 mars 1967 portant règlement d'administration",
+  "cadre_list_3": "Loi ALUR 2014 — copropriétés en difficulté, fonds travaux",
+  "cadre_list_4": "Loi ELAN 2018 — réforme de la gouvernance",
+  "cadre_list_5": "Ordonnance du 30 octobre 2019 — réforme de la copropriété",
+  "cadre_list_6": "Loi Climat & Résilience 2021 — obligations énergétiques",
+  "majorites_titre": "Règles de majorité en AG",
+  "majorites_item_1": "Art. 24 — Majorité simple (travaux d'entretien)",
+  "majorites_item_2": "Art. 25 — Majorité absolue (travaux importants)",
+  "majorites_item_3": "Art. 26 — Double majorité (travaux très importants)",
+  "majorites_item_4": "Art. 26-1 — Unanimité (suppression de parties communes)",
+  "majorites_note": "Toute erreur de majorité est un motif d'annulation de la résolution",
+  "faq_eyebrow": "Questions fréquentes",
+  "faq_titre_l1": "Vos questions sur",
+  "faq_titre_l2": "le droit de la copropriété",
   "faq": {
     "q1_question": "Puis-je contester une décision prise en AG ?",
     "q1_reponse": "Oui. Tout copropriétaire ayant voté contre une résolution ou ayant été absent ou représenté dispose d'un délai de 2 mois à compter de la notification du procès-verbal pour saisir le Tribunal judiciaire. Passé ce délai, la résolution devient définitive. Il est donc crucial d'agir rapidement.",
@@ -28,6 +52,9 @@
     "q5_question": "Quels sont les honoraires du cabinet pour un dossier de copropriété ?",
     "q5_reponse": "Les honoraires sont fixés lors de la première consultation, en toute transparence. Ils dépendent de la nature et de la complexité du dossier. Le cabinet pratique des honoraires forfaitaires pour les consultations et peut convenir d'honoraires de résultat dans certains dossiers contentieux. Aucune surprise en cours de procédure."
   },
-  "cta_titre": "Votre copropriété a besoin d'un expert.",
-  "cta_sous_titre": "Analysez votre situation avec le cabinet lors d'un premier entretien dédié."
+  "cta_titre_l1": "Votre copropriété",
+  "cta_titre_l2": "a besoin d'un expert.",
+  "cta_sous_titre": "Analysez votre situation avec le cabinet lors d'un premier entretien dédié.",
+  "cta_btn_1_label": "Prendre rendez-vous",
+  "cta_link_label": "Voir la transition énergétique →"
 }
