@@ -1,4 +1,4 @@
-/* CMS content loader — peuple le DOM depuis data/content.json */
+/* CMS content loader — peuple le DOM depuis les fichiers data/*.json */
 (async () => {
   function get(obj, path) {
     return path.split('.').reduce((acc, k) => acc?.[k], obj);
@@ -6,8 +6,16 @@
 
   let data;
   try {
-    const res = await fetch('/data/content.json');
-    data = await res.json();
+    const [avocate, contact, stats, temoignages, copropriete, energie, legal] = await Promise.all([
+      fetch('/data/avocate.json').then(r => r.json()),
+      fetch('/data/contact.json').then(r => r.json()),
+      fetch('/data/stats.json').then(r => r.json()),
+      fetch('/data/temoignages.json').then(r => r.json()),
+      fetch('/data/copropriete.json').then(r => r.json()),
+      fetch('/data/energie.json').then(r => r.json()),
+      fetch('/data/legal.json').then(r => r.json()),
+    ]);
+    data = { avocate, contact, stats, temoignages, copropriete, energie, legal };
   } catch (e) {
     return; // Fallback silencieux : le texte HTML statique reste affiché
   }

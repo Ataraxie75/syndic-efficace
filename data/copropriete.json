@@ -1,0 +1,33 @@
+{
+  "hero_titre": "Droit de la copropriété",
+  "hero_sous_titre": "Du contentieux entre copropriétaires à la sécurisation des assemblées générales, une expertise complète fondée sur la loi du 10 juillet 1965.",
+  "cartes": {
+    "c1_titre": "Contentieux entre copropriétaires",
+    "c1_texte": "Nuisances, troubles de jouissance, empiètements, travaux non autorisés, non-respect du règlement de copropriété. Représentation devant le Tribunal judiciaire.",
+    "c2_titre": "Assemblées générales",
+    "c2_texte": "Contestation de résolutions, nullité d'AG pour vice de convocation, erreur de majorité (art. 24, 25, 26 de la loi 1965). Référé pré-AG pour bloquer une résolution illégale.",
+    "c3_titre": "Impayés de charges",
+    "c3_texte": "Recouvrement des charges et provisions sur charges. Injonction de payer, hypothèque légale spéciale, saisie immobilière. Défense des copropriétaires en difficulté.",
+    "c4_titre": "Règlement de copropriété",
+    "c4_texte": "Interprétation, modification, mise en conformité du règlement. Rédaction de clauses spécifiques, modification de la répartition des charges, création de lots.",
+    "c5_titre": "Mise en cause du syndic",
+    "c5_texte": "Faute de gestion, détournement de fonds, défaut d'assurance, mauvaise tenue des comptes. Actions en responsabilité civile et remplacement judiciaire.",
+    "c6_titre": "Parties communes & privatives",
+    "c6_texte": "Délimitation des parties communes, usage abusif, appropriation illicite, servitudes. Défense de vos droits sur les espaces communs et sur votre lot privatif."
+  },
+  "cadre_texte": "Le droit de la copropriété est un droit technique, fondé sur des textes complexes et en constante évolution. La maîtrise de ce cadre est le fondement de chaque stratégie déployée par le cabinet.",
+  "faq": {
+    "q1_question": "Puis-je contester une décision prise en AG ?",
+    "q1_reponse": "Oui. Tout copropriétaire ayant voté contre une résolution ou ayant été absent ou représenté dispose d'un délai de 2 mois à compter de la notification du procès-verbal pour saisir le Tribunal judiciaire. Passé ce délai, la résolution devient définitive. Il est donc crucial d'agir rapidement.",
+    "q2_question": "Mon voisin ne respecte pas le règlement de copropriété. Que faire ?",
+    "q2_reponse": "Dans un premier temps, une mise en demeure par le syndic ou par voie d'avocat est recommandée. Si elle reste sans effet, une action en justice devant le Tribunal judiciaire permet d'obtenir la cessation du trouble, voire des dommages-intérêts. Le délai de prescription est de 10 ans en matière de copropriété.",
+    "q3_question": "Le syndic ne tient pas correctement les comptes. Que faire ?",
+    "q3_reponse": "La faute de gestion du syndic engage sa responsabilité civile. Le syndicat des copropriétaires (représenté par le conseil syndical) ou tout copropriétaire peut agir. Des mesures conservatoires peuvent être demandées en référé, notamment la désignation d'un mandataire ad hoc. Le cabinet accompagne ces procédures complexes.",
+    "q4_question": "Un copropriétaire ne paie pas ses charges depuis plusieurs années. Que faire ?",
+    "q4_reponse": "Le syndicat dispose d'une créance privilégiée sur le lot du débiteur. La procédure comprend : mise en demeure, injonction de payer (rapide et peu coûteuse), puis saisie des loyers ou saisie immobilière en cas de résistance. Le cabinet a une forte expérience du recouvrement de charges impayées et obtient des résultats concrets.",
+    "q5_question": "Quels sont les honoraires du cabinet pour un dossier de copropriété ?",
+    "q5_reponse": "Les honoraires sont fixés lors de la première consultation, en toute transparence. Ils dépendent de la nature et de la complexité du dossier. Le cabinet pratique des honoraires forfaitaires pour les consultations et peut convenir d'honoraires de résultat dans certains dossiers contentieux. Aucune surprise en cours de procédure."
+  },
+  "cta_titre": "Votre copropriété a besoin d'un expert.",
+  "cta_sous_titre": "Analysez votre situation avec le cabinet lors d'un premier entretien dédié."
+}
