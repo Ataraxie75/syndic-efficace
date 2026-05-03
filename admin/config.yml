@@ -1,6 +1,6 @@
 backend:
   name: git-gateway
-  branch: claude/real-estate-law-website-iwmx5
+  branch: main
 
 media_folder: "img"
 public_folder: "/img"
