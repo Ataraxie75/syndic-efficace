@@ -42,5 +42,74 @@
     "t3_nom": "Alexandre R.",
     "t3_role": "Syndic professionnel, Bordeaux",
     "t3_initiales": "A.R"
+  },
+  "copropriete": {
+    "hero_titre": "Droit de la copropriété",
+    "hero_sous_titre": "Du contentieux entre copropriétaires à la sécurisation des assemblées générales, une expertise complète fondée sur la loi du 10 juillet 1965.",
+    "cartes": {
+      "c1_titre": "Contentieux entre copropriétaires",
+      "c1_texte": "Nuisances, troubles de jouissance, empiètements, travaux non autorisés, non-respect du règlement de copropriété. Représentation devant le Tribunal judiciaire.",
+      "c2_titre": "Assemblées générales",
+      "c2_texte": "Contestation de résolutions, nullité d'AG pour vice de convocation, erreur de majorité (art. 24, 25, 26 de la loi 1965). Référé pré-AG pour bloquer une résolution illégale.",
+      "c3_titre": "Impayés de charges",
+      "c3_texte": "Recouvrement des charges et provisions sur charges. Injonction de payer, hypothèque légale spéciale, saisie immobilière. Défense des copropriétaires en difficulté.",
+      "c4_titre": "Règlement de copropriété",
+      "c4_texte": "Interprétation, modification, mise en conformité du règlement. Rédaction de clauses spécifiques, modification de la répartition des charges, création de lots.",
+      "c5_titre": "Mise en cause du syndic",
+      "c5_texte": "Faute de gestion, détournement de fonds, défaut d'assurance, mauvaise tenue des comptes. Actions en responsabilité civile et remplacement judiciaire.",
+      "c6_titre": "Parties communes & privatives",
+      "c6_texte": "Délimitation des parties communes, usage abusif, appropriation illicite, servitudes. Défense de vos droits sur les espaces communs et sur votre lot privatif."
+    },
+    "cadre_texte": "Le droit de la copropriété est un droit technique, fondé sur des textes complexes et en constante évolution. La maîtrise de ce cadre est le fondement de chaque stratégie déployée par le cabinet.",
+    "faq": {
+      "q1_question": "Puis-je contester une décision prise en AG ?",
+      "q1_reponse": "Oui. Tout copropriétaire ayant voté contre une résolution ou ayant été absent ou représenté dispose d'un délai de 2 mois à compter de la notification du procès-verbal pour saisir le Tribunal judiciaire. Passé ce délai, la résolution devient définitive. Il est donc crucial d'agir rapidement.",
+      "q2_question": "Mon voisin ne respecte pas le règlement de copropriété. Que faire ?",
+      "q2_reponse": "Dans un premier temps, une mise en demeure par le syndic ou par voie d'avocat est recommandée. Si elle reste sans effet, une action en justice devant le Tribunal judiciaire permet d'obtenir la cessation du trouble, voire des dommages-intérêts. Le délai de prescription est de 10 ans en matière de copropriété.",
+      "q3_question": "Le syndic ne tient pas correctement les comptes. Que faire ?",
+      "q3_reponse": "La faute de gestion du syndic engage sa responsabilité civile. Le syndicat des copropriétaires (représenté par le conseil syndical) ou tout copropriétaire peut agir. Des mesures conservatoires peuvent être demandées en référé, notamment la désignation d'un mandataire ad hoc. Le cabinet accompagne ces procédures complexes.",
+      "q4_question": "Un copropriétaire ne paie pas ses charges depuis plusieurs années. Que faire ?",
+      "q4_reponse": "Le syndicat dispose d'une créance privilégiée sur le lot du débiteur. La procédure comprend : mise en demeure, injonction de payer (rapide et peu coûteuse), puis saisie des loyers ou saisie immobilière en cas de résistance. Le cabinet a une forte expérience du recouvrement de charges impayées et obtient des résultats concrets.",
+      "q5_question": "Quels sont les honoraires du cabinet pour un dossier de copropriété ?",
+      "q5_reponse": "Les honoraires sont fixés lors de la première consultation, en toute transparence. Ils dépendent de la nature et de la complexité du dossier. Le cabinet pratique des honoraires forfaitaires pour les consultations et peut convenir d'honoraires de résultat dans certains dossiers contentieux. Aucune surprise en cours de procédure."
+    },
+    "cta_titre": "Votre copropriété a besoin d'un expert.",
+    "cta_sous_titre": "Analysez votre situation avec le cabinet lors d'un premier entretien dédié."
+  },
+  "energie": {
+    "hero_eyebrow": "Enjeu 2024–2026",
+    "hero_titre": "Transition énergétique & copropriété",
+    "hero_sous_titre": "DPE collectif, Plan Pluriannuel de Travaux, MaPrimeRénov'… De nouvelles obligations légales transforment en profondeur la vie des copropriétés. Le cabinet vous guide et vous défend.",
+    "intro_titre": "Un cadre légal nouveau, des sanctions réelles",
+    "intro_texte_1": "La loi Climat & Résilience du 22 août 2021 a profondément reconfiguré les obligations des copropriétés en matière énergétique. Ces nouvelles règles ne sont pas anodines : leur méconnaissance expose les copropriétaires, les syndicats et les syndics à des responsabilités juridiques concrètes.",
+    "intro_texte_2": "Le cabinet LK-avocat accompagne les copropriétés dans la compréhension et l'application de ces textes, et intervient en contentieux lorsque des litiges surgissent autour de la rénovation énergétique.",
+    "cartes": {
+      "c1_titre": "DPE collectif",
+      "c1_texte": "Conseil sur l'obligation de réaliser le Diagnostic de Performance Énergétique collectif. Recours en cas de DPE contesté ou de litige avec le prestataire diagnostiqueur.",
+      "c2_titre": "Plan Pluriannuel de Travaux",
+      "c2_texte": "Sécurisation juridique du PPT en AG (majorité applicable, ordre du jour, contestation). Litiges entre copropriétaires sur le financement et la réalisation des travaux.",
+      "c3_titre": "MaPrimeRénov' Copropriétés",
+      "c3_texte": "Accès aux aides de l'État pour la rénovation énergétique. Conseil sur les conditions d'éligibilité, les démarches et le contentieux en cas de refus ou de recouvrement indu.",
+      "c4_titre": "Contentieux des travaux",
+      "c4_texte": "Malfaçons, retards, surfacturation, désordres post-rénovation. Mise en cause des entreprises, des maîtres d'œuvre et des garanties décennales et biennales.",
+      "c5_titre": "Passoires thermiques & location",
+      "c5_texte": "Défense des propriétaires face aux nouvelles interdictions de location. Litiges locataires/propriétaires liés à la performance énergétique du logement (DPE, décence).",
+      "c6_titre": "Responsabilité du syndic",
+      "c6_texte": "Action en responsabilité contre le syndic qui n'a pas fait voter le PPT obligatoire, n'a pas engagé le DPE collectif ou a mal géré les aides publiques à la rénovation."
+    },
+    "faq": {
+      "q1_question": "Mon immeuble est-il concerné par le DPE collectif ?",
+      "q1_reponse": "Tous les immeubles en copropriété sont potentiellement concernés. Les immeubles de plus de 200 lots devaient réaliser leur DPE collectif avant le 1er janvier 2024. Ceux de 50 à 200 lots, avant le 1er janvier 2025. Les immeubles de moins de 50 lots ont jusqu'au 1er janvier 2026. Le défaut de réalisation peut engager la responsabilité du syndic.",
+      "q2_question": "Le Plan Pluriannuel de Travaux est-il vraiment obligatoire ?",
+      "q2_reponse": "Oui, depuis le 1er janvier 2023 pour les copropriétés de plus de 200 lots, depuis le 1er janvier 2024 pour celles de 51 à 200 lots, et depuis le 1er janvier 2025 pour toutes les autres. Le PPT doit être établi pour une durée de 10 ans et révisé tous les 10 ans. Son absence peut constituer une faute du syndic.",
+      "q3_question": "Des copropriétaires bloquent le vote des travaux de rénovation. Que faire ?",
+      "q3_reponse": "La loi Climat & Résilience a introduit des mécanismes pour débloquer ces situations. Selon la nature des travaux, la majorité requise peut varier (art. 24, 25 ou 26). En cas de blocage persistant, une action en justice pour abus de minorité est possible. Le cabinet analyse les recours adaptés à chaque situation.",
+      "q4_question": "Les travaux de rénovation ont été mal réalisés. Qui est responsable ?",
+      "q4_reponse": "Plusieurs responsabilités peuvent être engagées : l'entreprise (garantie décennale ou biennale selon la nature du désordre), le maître d'œuvre, voire le syndic en cas de mauvais suivi du chantier. Des délais de prescription spécifiques s'appliquent. Il est impératif de réagir rapidement dès l'apparition des désordres.",
+      "q5_question": "Mon appartement classé G est interdit à la location. Quels sont mes recours ?",
+      "q5_reponse": "Depuis le 1er janvier 2025, les logements classés G ne peuvent plus faire l'objet d'un nouveau contrat de location. Si le classement vous semble erroné, une contestation du DPE est possible dans les 6 mois. Des dispositifs d'aide à la rénovation (MaPrimeRénov') permettent de financer les travaux nécessaires. Le cabinet vous accompagne dans ces démarches."
+    },
+    "cta_titre": "La rénovation de votre immeuble commence par un conseil juridique.",
+    "cta_sous_titre": "Anticipez les obligations, sécurisez vos décisions, protégez vos investissements."
   }
 }
