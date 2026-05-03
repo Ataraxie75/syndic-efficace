@@ -3,127 +3,118 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mentions légales — Forward Copilot</title>
-  <meta name="description" content="Mentions légales du site syndic-efficace.fr édité par Forward.">
+  <title>Mentions légales — LK-avocat</title>
+  <meta name="description" content="Mentions légales du cabinet LK-avocat, avocate spécialisée en droit de la copropriété et transition énergétique.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/lk-avocat.css">
 </head>
 <body>
 
-  <!-- HEADER -->
-  <header class="header">
-    <div class="container header__inner">
-      <a href="index.html" class="logo">
-        <span class="logo__chevron">›</span>
-        <span class="logo__text">FORWARD</span>
-      </a>
-      <a href="index.html" class="btn btn--primary btn--sm">← Retour</a>
+  <header class="lk-header" id="header">
+    <div class="container lk-header__inner">
+      <a href="index.html" class="lk-logo">LK<span class="lk-logo__line"></span><span style="font-size:.85rem;letter-spacing:.18em;font-weight:400;font-family:var(--font-sans)">AVOCAT</span></a>
+      <nav class="lk-nav">
+        <a href="cabinet.html">Le cabinet</a>
+        <a href="expertise-copropriete.html">Copropriété</a>
+        <a href="expertise-transition-energetique.html">Transition énergétique</a>
+        <a href="contact.html" class="btn btn--or" style="padding:.6rem 1.25rem;font-size:.82rem;">Prendre rendez-vous</a>
+      </nav>
+      <button class="lk-burger" id="burger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
     </div>
+    <nav class="lk-nav--mobile" id="nav-mobile">
+      <a href="cabinet.html">Le cabinet</a>
+      <a href="expertise-copropriete.html">Copropriété</a>
+      <a href="expertise-transition-energetique.html">Transition énergétique</a>
+      <a href="contact.html" class="btn btn--or">Prendre rendez-vous</a>
+    </nav>
   </header>
 
-  <!-- HERO -->
-  <section class="legal-hero">
-    <div class="container">
-      <p class="legal-hero__eyebrow">Informations légales</p>
-      <h1 class="legal-hero__title">Mentions légales</h1>
-      <p class="legal-hero__date">En vigueur au 1er janvier 2025</p>
+  <section class="lk-page-hero">
+    <div class="container lk-page-hero__inner">
+      <nav class="lk-breadcrumb">
+        <a href="index.html">Accueil</a>
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
+        <span>Mentions légales</span>
+      </nav>
+      <p class="eyebrow">Informations légales</p>
+      <h1>Mentions légales</h1>
+      <p>En vigueur au <span data-cms="legal.date_vigueur">1er janvier 2025</span></p>
     </div>
   </section>
 
-  <!-- BODY -->
-  <div class="legal-body">
-    <div class="container" style="max-width: 760px;">
+  <div style="padding:4rem 0 6rem;background:var(--lk-ivoire)">
+    <div class="container" style="max-width:760px">
 
-      <div class="legal-block">
-        <h2>1. Éditeur du site</h2>
-        <p>Le site <strong>syndic-efficace.fr</strong> est édité par :</p>
-        <p>
-          <strong>Raison sociale :</strong> <span class="legal-placeholder">[NOM]</span><br>
-          <strong>Forme juridique :</strong> Entreprise individuelle / SASU (à préciser)<br>
-          <strong>SIRET :</strong> <span class="legal-placeholder">[SIRET]</span><br>
-          <strong>Siège social :</strong> <span class="legal-placeholder">[ADRESSE]</span><br>
-          <strong>Email :</strong> <span class="legal-placeholder">[EMAIL]</span><br>
-          <strong>Directeur de la publication :</strong> <span class="legal-placeholder">[NOM]</span>
+      <div style="margin-bottom:2.5rem">
+        <h2 style="font-family:var(--font-serif);font-size:1.4rem;color:var(--lk-vert);margin-bottom:1rem">1. Éditeur du site</h2>
+        <p style="margin-bottom:.5rem">Le présent site est édité par :</p>
+        <p style="line-height:2">
+          <strong>Nom :</strong> <span data-cms="legal.nom_cabinet">[Nom complet de l'avocate]</span><br>
+          <strong>Qualité :</strong> Avocate au Barreau de Paris<br>
+          <strong>SIRET :</strong> <span data-cms="legal.siret">[Numéro SIRET]</span><br>
+          <strong>Adresse :</strong> <span data-cms="legal.adresse">[Adresse du cabinet]</span><br>
+          <strong>Email :</strong> <span data-cms="legal.email">[Email de contact]</span><br>
+          <strong>Directeur de la publication :</strong> <span data-cms="legal.nom_cabinet">[Nom complet de l'avocate]</span>
         </p>
       </div>
 
-      <div class="legal-block">
-        <h2>2. Hébergeur</h2>
-        <p>Le site est hébergé par :</p>
-        <p>
-          <strong>Hostinger International Ltd</strong><br>
-          61 Lordou Vironos Street, 6023 Larnaca, Chypre<br>
-          Site web : <a href="https://www.hostinger.fr" target="_blank" rel="noopener">www.hostinger.fr</a>
+      <div style="margin-bottom:2.5rem">
+        <h2 style="font-family:var(--font-serif);font-size:1.4rem;color:var(--lk-vert);margin-bottom:1rem">2. Hébergeur</h2>
+        <p style="line-height:2">
+          <strong>Netlify, Inc.</strong><br>
+          44 Montgomery Street, Suite 300, San Francisco, CA 94104, États-Unis<br>
+          Site web : <a href="https://www.netlify.com" target="_blank" rel="noopener" style="color:var(--lk-or)">www.netlify.com</a>
         </p>
       </div>
 
-      <div class="legal-block">
-        <h2>3. Propriété intellectuelle</h2>
-        <p>L'ensemble des contenus présents sur le site syndic-efficace.fr (textes, prompts, structure, visuels) est la propriété exclusive de <span class="legal-placeholder">[NOM]</span>, sauf mention contraire.</p>
-        <p>Toute reproduction, distribution, modification ou utilisation commerciale de ces contenus, sans autorisation écrite préalable, est strictement interdite et constitue une contrefaçon sanctionnée par les articles L.335-2 et suivants du Code de la Propriété Intellectuelle.</p>
+      <div style="margin-bottom:2.5rem">
+        <h2 style="font-family:var(--font-serif);font-size:1.4rem;color:var(--lk-vert);margin-bottom:1rem">3. Propriété intellectuelle</h2>
+        <p>L'ensemble des contenus présents sur ce site (textes, visuels, structure) est la propriété exclusive de <span data-cms="legal.nom_cabinet">[Nom complet de l'avocate]</span>, sauf mention contraire. Toute reproduction sans autorisation écrite préalable est interdite.</p>
       </div>
 
-      <div class="legal-block">
-        <h2>4. Données personnelles</h2>
-        <p>Ce site collecte des données personnelles dans les cas suivants :</p>
-        <ul>
-          <li>Formulaire de contact : adresse email et nom (finalité : réponse à votre demande)</li>
-          <li>Paiement en ligne : les données de paiement sont traitées directement par Stripe et ne transitent pas par nos serveurs</li>
-        </ul>
-        <p>Conformément au Règlement Général sur la Protection des Données (RGPD) — Règlement UE 2016/679 — et à la loi Informatique et Libertés du 6 janvier 1978 modifiée, vous disposez des droits suivants :</p>
-        <ul>
-          <li>Droit d'accès à vos données</li>
-          <li>Droit de rectification</li>
-          <li>Droit à l'effacement (« droit à l'oubli »)</li>
-          <li>Droit à la limitation du traitement</li>
-          <li>Droit à la portabilité</li>
-          <li>Droit d'opposition</li>
-        </ul>
-        <p>Pour exercer ces droits, contactez-nous à : <span class="legal-placeholder">[EMAIL]</span></p>
-        <p>En cas de réclamation, vous pouvez saisir la <strong>CNIL</strong> : <a href="https://www.cnil.fr" target="_blank" rel="noopener">www.cnil.fr</a></p>
+      <div style="margin-bottom:2.5rem">
+        <h2 style="font-family:var(--font-serif);font-size:1.4rem;color:var(--lk-vert);margin-bottom:1rem">4. Données personnelles</h2>
+        <p>Ce site collecte uniquement les données transmises via le formulaire de contact (nom, email, message), dans le seul but de répondre à votre demande. Ces données ne sont jamais cédées à des tiers.</p>
+        <p style="margin-top:1rem">Conformément au RGPD, vous disposez d'un droit d'accès, de rectification et d'effacement de vos données. Pour exercer ces droits : <span data-cms="legal.email">[Email de contact]</span></p>
+        <p style="margin-top:1rem">En cas de réclamation : <a href="https://www.cnil.fr" target="_blank" rel="noopener" style="color:var(--lk-or)">www.cnil.fr</a></p>
       </div>
 
-      <div class="legal-block">
-        <h2>5. Cookies</h2>
-        <p>Ce site n'utilise pas de cookies de tracking ou de mesure d'audience. Aucun cookie publicitaire n'est déposé sur votre appareil.</p>
-        <p>Un cookie technique peut être utilisé pour mémoriser votre acceptation du bandeau d'information (stocké en <code>localStorage</code>, sans transmission à un serveur tiers).</p>
+      <div style="margin-bottom:2.5rem">
+        <h2 style="font-family:var(--font-serif);font-size:1.4rem;color:var(--lk-vert);margin-bottom:1rem">5. Cookies</h2>
+        <p>Ce site n'utilise pas de cookies de tracking ou publicitaires. Un indicateur technique est stocké localement pour mémoriser votre acceptation du bandeau d'information (aucune donnée personnelle transmise).</p>
       </div>
 
-      <div class="legal-block">
-        <h2>6. Liens hypertextes</h2>
-        <p>Le site peut contenir des liens vers des sites tiers. <span class="legal-placeholder">[NOM]</span> n'est pas responsable du contenu de ces sites ni de leur politique de confidentialité.</p>
-      </div>
-
-      <div class="legal-block">
-        <h2>7. Droit applicable et juridiction</h2>
-        <p>Les présentes mentions légales sont soumises au droit français. En cas de litige, et à défaut de résolution amiable, les tribunaux français seront seuls compétents.</p>
-      </div>
-
-      <div class="legal-block">
-        <h2>8. Contact</h2>
-        <p>Pour toute question relative aux présentes mentions légales :</p>
-        <p>
-          Email : <span class="legal-placeholder">[EMAIL]</span><br>
-          Adresse : <span class="legal-placeholder">[ADRESSE]</span>
-        </p>
+      <div style="margin-bottom:2.5rem">
+        <h2 style="font-family:var(--font-serif);font-size:1.4rem;color:var(--lk-vert);margin-bottom:1rem">6. Droit applicable</h2>
+        <p>Les présentes mentions légales sont soumises au droit français. En cas de litige, les tribunaux français sont seuls compétents.</p>
       </div>
 
     </div>
   </div>
 
-  <!-- FOOTER -->
-  <footer class="footer">
-    <div class="container footer__inner">
-      <span class="footer__copy">© Forward — Consultant Microsoft Copilot</span>
-      <nav class="footer__nav">
+  <footer class="lk-footer">
+    <div class="container lk-footer__inner">
+      <a href="index.html" class="lk-footer__logo">LK-avocat</a>
+      <nav class="lk-footer__nav">
+        <a href="cabinet.html">Le cabinet</a>
+        <a href="expertise-copropriete.html">Copropriété</a>
+        <a href="expertise-transition-energetique.html">Transition énergétique</a>
+        <a href="contact.html">Contact</a>
         <a href="mentions-legales.html">Mentions légales</a>
-        <a href="politique-confidentialite.html">Politique de confidentialité</a>
-        <a href="mailto:contact@forward-copilot.fr">Contact</a>
       </nav>
+    </div>
+    <div class="container">
+      <p class="lk-footer__copy">© 2025 LK-avocat — Tous droits réservés. Les informations contenues sur ce site ne constituent pas un conseil juridique.</p>
     </div>
   </footer>
 
+  <div class="lk-cookie is-hidden" id="cookie-banner" role="alert">
+    <p>Ce site utilise uniquement des cookies fonctionnels essentiels. Aucun tracking publicitaire.</p>
+    <button class="lk-cookie__btn" id="cookie-accept">J'ai compris</button>
+  </div>
+  <script src="js/cms-loader.js"></script>
+  <script src="js/lk-avocat.js"></script>
 </body>
 </html>

@@ -3,167 +3,145 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Politique de confidentialité — Forward Copilot</title>
-  <meta name="description" content="Politique de confidentialité et traitement des données personnelles — syndic-efficace.fr.">
+  <title>Politique de confidentialité — LK-avocat</title>
+  <meta name="description" content="Politique de confidentialité et traitement des données personnelles — Cabinet LK-avocat.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/lk-avocat.css">
 </head>
 <body>
 
-  <!-- HEADER -->
-  <header class="header">
-    <div class="container header__inner">
-      <a href="index.html" class="logo">
-        <span class="logo__chevron">›</span>
-        <span class="logo__text">FORWARD</span>
-      </a>
-      <a href="index.html" class="btn btn--primary btn--sm">← Retour</a>
+  <header class="lk-header" id="header">
+    <div class="container lk-header__inner">
+      <a href="index.html" class="lk-logo">LK<span class="lk-logo__line"></span><span style="font-size:.85rem;letter-spacing:.18em;font-weight:400;font-family:var(--font-sans)">AVOCAT</span></a>
+      <nav class="lk-nav">
+        <a href="cabinet.html">Le cabinet</a>
+        <a href="expertise-copropriete.html">Copropriété</a>
+        <a href="expertise-transition-energetique.html">Transition énergétique</a>
+        <a href="contact.html" class="btn btn--or" style="padding:.6rem 1.25rem;font-size:.82rem;">Prendre rendez-vous</a>
+      </nav>
+      <button class="lk-burger" id="burger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
     </div>
+    <nav class="lk-nav--mobile" id="nav-mobile">
+      <a href="cabinet.html">Le cabinet</a>
+      <a href="expertise-copropriete.html">Copropriété</a>
+      <a href="expertise-transition-energetique.html">Transition énergétique</a>
+      <a href="contact.html" class="btn btn--or">Prendre rendez-vous</a>
+    </nav>
   </header>
 
-  <!-- HERO -->
-  <section class="legal-hero">
-    <div class="container">
-      <p class="legal-hero__eyebrow">RGPD & Confidentialité</p>
-      <h1 class="legal-hero__title">Politique de confidentialité</h1>
-      <p class="legal-hero__date">En vigueur au 1er janvier 2025</p>
+  <section class="lk-page-hero">
+    <div class="container lk-page-hero__inner">
+      <nav class="lk-breadcrumb">
+        <a href="index.html">Accueil</a>
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
+        <span>Politique de confidentialité</span>
+      </nav>
+      <p class="eyebrow">RGPD & Confidentialité</p>
+      <h1>Politique de confidentialité</h1>
+      <p>En vigueur au <span data-cms="legal.date_vigueur">1er janvier 2025</span></p>
     </div>
   </section>
 
-  <!-- BODY -->
-  <div class="legal-body">
-    <div class="container" style="max-width: 760px;">
+  <div style="padding:4rem 0 6rem;background:var(--lk-ivoire)">
+    <div class="container" style="max-width:760px">
 
-      <div class="legal-block">
-        <h2>1. Qui sommes-nous ?</h2>
-        <p>Le responsable du traitement des données personnelles collectées sur le site <strong>syndic-efficace.fr</strong> est :</p>
-        <p>
-          <strong><span class="legal-placeholder">[NOM]</span></strong><br>
-          SIRET : <span class="legal-placeholder">[SIRET]</span><br>
-          Adresse : <span class="legal-placeholder">[ADRESSE]</span><br>
-          Email : <span class="legal-placeholder">[EMAIL]</span>
-        </p>
-        <p>Nous nous engageons à traiter vos données personnelles dans le respect du Règlement Général sur la Protection des Données (RGPD — UE 2016/679) et de la loi Informatique et Libertés du 6 janvier 1978 modifiée.</p>
-      </div>
-
-      <div class="legal-block">
-        <h2>2. Données collectées</h2>
-        <p>Nous collectons uniquement les données strictement nécessaires à nos services :</p>
-        <ul>
-          <li>
-            <strong>Formulaire de contact :</strong> nom, adresse email, message.
-            Finalité : répondre à votre demande d'information ou de support.
-          </li>
-          <li>
-            <strong>Achat du pack :</strong> les données de paiement (carte bancaire, IBAN) sont traitées exclusivement par <strong>Stripe, Inc.</strong> (prestataire de paiement certifié PCI-DSS). Nous ne stockons aucune donnée de paiement.
-          </li>
-          <li>
-            <strong>Accès au pack après achat :</strong> un token d'accès temporaire est généré pour permettre l'accès au contenu. Il ne contient aucune donnée personnelle identifiable.
-          </li>
-        </ul>
-        <p>Nous ne collectons <strong>aucune donnée de navigation</strong>, aucun cookie de tracking, et nous n'utilisons aucun outil d'analytics tiers (Google Analytics, Hotjar, etc.).</p>
-      </div>
-
-      <div class="legal-block">
-        <h2>3. Base légale des traitements</h2>
-        <ul>
-          <li><strong>Exécution du contrat</strong> : traitement des commandes et accès au pack acheté (art. 6.1.b RGPD)</li>
-          <li><strong>Consentement</strong> : envoi d'emails de suivi ou de communication commerciale, si vous y avez expressément consenti (art. 6.1.a RGPD)</li>
-          <li><strong>Intérêt légitime</strong> : réponse aux demandes de contact entrant (art. 6.1.f RGPD)</li>
-          <li><strong>Obligation légale</strong> : conservation des données de facturation (art. 6.1.c RGPD)</li>
-        </ul>
-      </div>
-
-      <div class="legal-block">
-        <h2>4. Durée de conservation</h2>
-        <ul>
-          <li><strong>Données de contact</strong> : conservées 3 ans à compter du dernier contact, puis supprimées.</li>
-          <li><strong>Données de facturation</strong> : conservées 10 ans conformément aux obligations comptables (article L.123-22 du Code de commerce).</li>
-          <li><strong>Token d'accès</strong> : valide pour une durée indéfinie (accès à vie) ; supprimé sur demande.</li>
-        </ul>
-      </div>
-
-      <div class="legal-block">
-        <h2>5. Partage des données</h2>
-        <p>Vos données ne sont jamais vendues, louées ou cédées à des tiers à des fins commerciales.</p>
-        <p>Elles peuvent être partagées uniquement avec les sous-traitants suivants, dans la stricte limite nécessaire à leur mission :</p>
-        <ul>
-          <li><strong>Stripe, Inc.</strong> — traitement des paiements (États-Unis, couvert par les clauses contractuelles types UE)</li>
-          <li><strong>Hostinger International Ltd</strong> — hébergement du site (Chypre, UE)</li>
-        </ul>
-      </div>
-
-      <div class="legal-block">
-        <h2>6. Vos droits</h2>
-        <p>Conformément au RGPD, vous disposez des droits suivants sur vos données personnelles :</p>
-        <ul>
-          <li><strong>Droit d'accès</strong> : obtenir une copie des données vous concernant</li>
-          <li><strong>Droit de rectification</strong> : corriger des données inexactes ou incomplètes</li>
-          <li><strong>Droit à l'effacement</strong> : demander la suppression de vos données (sous réserve des obligations légales)</li>
-          <li><strong>Droit à la limitation</strong> : restreindre temporairement l'utilisation de vos données</li>
-          <li><strong>Droit à la portabilité</strong> : recevoir vos données dans un format structuré et lisible</li>
-          <li><strong>Droit d'opposition</strong> : vous opposer à un traitement fondé sur l'intérêt légitime</li>
-          <li><strong>Droit de retirer votre consentement</strong> à tout moment, sans conséquence sur les traitements antérieurs</li>
-        </ul>
-        <p>Pour exercer l'un de ces droits, contactez-nous à : <span class="legal-placeholder">[EMAIL]</span></p>
-        <p>Nous nous engageons à répondre dans un délai maximum d'<strong>un mois</strong> à compter de la réception de votre demande.</p>
-      </div>
-
-      <div class="legal-block">
-        <h2>7. Cookies et traceurs</h2>
-        <p>Ce site n'utilise <strong>aucun cookie de tracking ou d'analyse</strong>.</p>
-        <p>La seule donnée stockée localement sur votre navigateur est un indicateur d'acceptation du bandeau d'information (via <code>localStorage</code>), qui ne contient aucune information personnelle et n'est jamais transmis à un serveur.</p>
-      </div>
-
-      <div class="legal-block">
-        <h2>8. Sécurité des données</h2>
-        <p>Nous mettons en œuvre les mesures techniques et organisationnelles appropriées pour protéger vos données contre tout accès non autorisé, perte, destruction ou divulgation :</p>
-        <ul>
-          <li>Connexions chiffrées via HTTPS (TLS)</li>
-          <li>Accès aux données limité aux seules personnes habilitées</li>
-          <li>Paiements gérés par Stripe (certification PCI-DSS niveau 1)</li>
-        </ul>
-      </div>
-
-      <div class="legal-block">
-        <h2>9. Réclamation auprès de la CNIL</h2>
-        <p>Si vous estimez que le traitement de vos données ne respecte pas la réglementation en vigueur, vous avez le droit d'introduire une réclamation auprès de la <strong>Commission Nationale de l'Informatique et des Libertés (CNIL)</strong> :</p>
-        <p>
-          Site : <a href="https://www.cnil.fr" target="_blank" rel="noopener">www.cnil.fr</a><br>
-          Adresse : 3 Place de Fontenoy, TSA 80715, 75334 Paris Cedex 07
+      <div style="margin-bottom:2.5rem">
+        <h2 style="font-family:var(--font-serif);font-size:1.4rem;color:var(--lk-vert);margin-bottom:1rem">1. Responsable du traitement</h2>
+        <p style="line-height:2">
+          <strong><span data-cms="legal.nom_cabinet">[Nom complet de l'avocate]</span></strong><br>
+          Avocate au Barreau de Paris<br>
+          SIRET : <span data-cms="legal.siret">[Numéro SIRET]</span><br>
+          Adresse : <span data-cms="legal.adresse">[Adresse du cabinet]</span><br>
+          Email : <span data-cms="legal.email">[Email de contact]</span>
         </p>
       </div>
 
-      <div class="legal-block">
-        <h2>10. Modifications de cette politique</h2>
-        <p>Nous nous réservons le droit de modifier la présente politique à tout moment. La version en vigueur est celle affichée sur cette page avec la date de mise à jour indiquée en haut de document. Toute modification substantielle vous sera notifiée par email si vous êtes client.</p>
+      <div style="margin-bottom:2.5rem">
+        <h2 style="font-family:var(--font-serif);font-size:1.4rem;color:var(--lk-vert);margin-bottom:1rem">2. Données collectées</h2>
+        <p>Nous collectons uniquement les données strictement nécessaires :</p>
+        <ul style="margin-top:1rem;padding-left:1.5rem;line-height:2">
+          <li><strong>Formulaire de contact :</strong> nom, email, message. Finalité : répondre à votre demande.</li>
+        </ul>
+        <p style="margin-top:1rem">Aucune donnée de navigation, aucun cookie de tracking, aucun outil d'analytics tiers n'est utilisé.</p>
       </div>
 
-      <div class="legal-block">
-        <h2>11. Contact</h2>
-        <p>Pour toute question relative à cette politique de confidentialité ou pour exercer vos droits :</p>
-        <p>
-          Email : <span class="legal-placeholder">[EMAIL]</span><br>
-          Adresse : <span class="legal-placeholder">[ADRESSE]</span>
-        </p>
+      <div style="margin-bottom:2.5rem">
+        <h2 style="font-family:var(--font-serif);font-size:1.4rem;color:var(--lk-vert);margin-bottom:1rem">3. Base légale</h2>
+        <ul style="padding-left:1.5rem;line-height:2">
+          <li><strong>Intérêt légitime :</strong> réponse aux demandes de contact (art. 6.1.f RGPD)</li>
+          <li><strong>Obligation légale :</strong> conservation des données de facturation (art. 6.1.c RGPD)</li>
+        </ul>
+      </div>
+
+      <div style="margin-bottom:2.5rem">
+        <h2 style="font-family:var(--font-serif);font-size:1.4rem;color:var(--lk-vert);margin-bottom:1rem">4. Durée de conservation</h2>
+        <ul style="padding-left:1.5rem;line-height:2">
+          <li><strong>Données de contact :</strong> 3 ans à compter du dernier échange.</li>
+          <li><strong>Données de facturation :</strong> 10 ans (obligations comptables légales).</li>
+        </ul>
+      </div>
+
+      <div style="margin-bottom:2.5rem">
+        <h2 style="font-family:var(--font-serif);font-size:1.4rem;color:var(--lk-vert);margin-bottom:1rem">5. Partage des données</h2>
+        <p>Vos données ne sont jamais vendues ni cédées à des tiers. Elles peuvent être transmises uniquement à :</p>
+        <ul style="margin-top:1rem;padding-left:1.5rem;line-height:2">
+          <li><strong>Netlify, Inc.</strong> — hébergement du site et formulaire de contact</li>
+        </ul>
+      </div>
+
+      <div style="margin-bottom:2.5rem">
+        <h2 style="font-family:var(--font-serif);font-size:1.4rem;color:var(--lk-vert);margin-bottom:1rem">6. Vos droits</h2>
+        <p>Conformément au RGPD, vous disposez des droits suivants :</p>
+        <ul style="margin-top:1rem;padding-left:1.5rem;line-height:2">
+          <li>Droit d'accès, de rectification et d'effacement</li>
+          <li>Droit à la limitation et à la portabilité</li>
+          <li>Droit d'opposition</li>
+        </ul>
+        <p style="margin-top:1rem">Pour exercer ces droits : <span data-cms="legal.email">[Email de contact]</span><br>
+        Réponse sous un mois maximum. En cas de réclamation : <a href="https://www.cnil.fr" target="_blank" rel="noopener" style="color:var(--lk-or)">www.cnil.fr</a></p>
+      </div>
+
+      <div style="margin-bottom:2.5rem">
+        <h2 style="font-family:var(--font-serif);font-size:1.4rem;color:var(--lk-vert);margin-bottom:1rem">7. Cookies</h2>
+        <p>Ce site n'utilise aucun cookie de tracking ou d'analyse. Un indicateur technique local mémorise votre acceptation du bandeau d'information (aucune donnée personnelle, jamais transmis à un serveur).</p>
+      </div>
+
+      <div style="margin-bottom:2.5rem">
+        <h2 style="font-family:var(--font-serif);font-size:1.4rem;color:var(--lk-vert);margin-bottom:1rem">8. Sécurité</h2>
+        <p>Le site est servi exclusivement en HTTPS. L'accès aux données est limité aux seules personnes habilitées.</p>
+      </div>
+
+      <div style="margin-bottom:2.5rem">
+        <h2 style="font-family:var(--font-serif);font-size:1.4rem;color:var(--lk-vert);margin-bottom:1rem">9. Modifications</h2>
+        <p>Cette politique peut être mise à jour à tout moment. La date de mise en vigueur est indiquée en haut de cette page.</p>
       </div>
 
     </div>
   </div>
 
-  <!-- FOOTER -->
-  <footer class="footer">
-    <div class="container footer__inner">
-      <span class="footer__copy">© Forward — Consultant Microsoft Copilot</span>
-      <nav class="footer__nav">
+  <footer class="lk-footer">
+    <div class="container lk-footer__inner">
+      <a href="index.html" class="lk-footer__logo">LK-avocat</a>
+      <nav class="lk-footer__nav">
+        <a href="cabinet.html">Le cabinet</a>
+        <a href="expertise-copropriete.html">Copropriété</a>
+        <a href="expertise-transition-energetique.html">Transition énergétique</a>
+        <a href="contact.html">Contact</a>
         <a href="mentions-legales.html">Mentions légales</a>
-        <a href="politique-confidentialite.html">Politique de confidentialité</a>
-        <a href="mailto:contact@forward-copilot.fr">Contact</a>
       </nav>
+    </div>
+    <div class="container">
+      <p class="lk-footer__copy">© 2025 LK-avocat — Tous droits réservés. Les informations contenues sur ce site ne constituent pas un conseil juridique.</p>
     </div>
   </footer>
 
+  <div class="lk-cookie is-hidden" id="cookie-banner" role="alert">
+    <p>Ce site utilise uniquement des cookies fonctionnels essentiels. Aucun tracking publicitaire.</p>
+    <button class="lk-cookie__btn" id="cookie-accept">J'ai compris</button>
+  </div>
+  <script src="js/cms-loader.js"></script>
+  <script src="js/lk-avocat.js"></script>
 </body>
 </html>
