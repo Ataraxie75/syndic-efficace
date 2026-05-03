@@ -5,8 +5,46 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Administration — LK-avocat</title>
   <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'DM Sans', system-ui, sans-serif; background: #1E3A2F; }
+    #welcome {
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
+      min-height: 100vh; text-align: center; padding: 2rem;
+    }
+    #welcome h1 {
+      font-family: Georgia, serif; color: #C9A96E;
+      font-size: clamp(1.8rem, 4vw, 2.6rem); margin-bottom: .75rem; font-weight: 600;
+    }
+    #welcome p { color: rgba(255,255,255,.7); font-size: 1rem; max-width: 400px; line-height: 1.7; margin-bottom: 1.5rem; }
+    #welcome .loader {
+      width: 36px; height: 36px; border: 3px solid rgba(201,169,110,.2);
+      border-top-color: #C9A96E; border-radius: 50%; animation: spin .8s linear infinite;
+    }
+    #welcome .hint { font-size: .82rem; color: rgba(255,255,255,.35); margin-top: 1.2rem; }
+    #welcome a { color: #C9A96E; }
+    @keyframes spin { to { transform: rotate(360deg); } }
+  </style>
 </head>
 <body>
+
+  <div id="welcome">
+    <h1>Bonjour Laetitia 👋</h1>
+    <p>Votre espace d'administration est en cours de chargement…</p>
+    <div class="loader"></div>
+    <p class="hint">Besoin d'aide ? Consultez le <a href="/guide.html" target="_blank">guide d'utilisation</a>.</p>
+  </div>
+
   <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+  <script>
+    // Masque l'écran de bienvenue une fois Decap CMS chargé
+    window.addEventListener('load', function () {
+      setTimeout(function () {
+        var w = document.getElementById('welcome');
+        if (w) w.style.display = 'none';
+      }, 1200);
+    });
+  </script>
+
 </body>
 </html>

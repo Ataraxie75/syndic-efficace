@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guide — Modifier mon site</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --vert: #1E3A2F;
+      --or: #C9A96E;
+      --ivoire: #F5F0E8;
+      --blanc: #ffffff;
+      --texte: #2C2C2C;
+      --gris: #6B7280;
+      --font-serif: 'Cormorant Garamond', Georgia, serif;
+      --font-sans: 'DM Sans', system-ui, sans-serif;
+    }
+    body { font-family: var(--font-sans); background: var(--ivoire); color: var(--texte); min-height: 100vh; }
+
+    /* HEADER */
+    .header {
+      background: var(--vert);
+      padding: 1.25rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .header__logo {
+      font-family: var(--font-serif);
+      color: var(--blanc);
+      font-size: 1.4rem;
+      font-weight: 600;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: .6rem;
+    }
+    .header__logo span { color: var(--or); font-size: .75rem; letter-spacing: .15em; font-family: var(--font-sans); font-weight: 400; }
+    .header__link { color: var(--or); font-size: .85rem; text-decoration: none; border: 1px solid var(--or); border-radius: 4px; padding: .4rem .9rem; transition: background .2s; }
+    .header__link:hover { background: var(--or); color: var(--vert); }
+
+    /* HERO */
+    .hero {
+      background: var(--vert);
+      padding: 4rem 2rem 5rem;
+      text-align: center;
+    }
+    .hero__eyebrow { color: var(--or); font-size: .78rem; letter-spacing: .18em; text-transform: uppercase; margin-bottom: 1rem; }
+    .hero__title { font-family: var(--font-serif); font-size: clamp(2.2rem, 5vw, 3.2rem); color: var(--blanc); font-weight: 600; margin-bottom: 1rem; line-height: 1.2; }
+    .hero__title em { color: var(--or); font-style: italic; }
+    .hero__sub { color: rgba(255,255,255,.75); font-size: 1.05rem; max-width: 520px; margin: 0 auto 2.5rem; line-height: 1.7; }
+    .btn-primary {
+      display: inline-flex; align-items: center; gap: .6rem;
+      background: var(--or); color: var(--vert);
+      font-family: var(--font-sans); font-weight: 600; font-size: 1rem;
+      padding: 1rem 2rem; border-radius: 6px; text-decoration: none;
+      transition: transform .15s, box-shadow .15s;
+    }
+    .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,.25); }
+
+    /* STEPS */
+    .steps { max-width: 760px; margin: 0 auto; padding: 4rem 1.5rem; }
+    .steps__title { font-family: var(--font-serif); font-size: 1.8rem; color: var(--vert); text-align: center; margin-bottom: 3rem; font-weight: 600; }
+
+    .step {
+      display: flex; gap: 1.5rem; margin-bottom: 2rem;
+      background: var(--blanc); border-radius: 12px; padding: 1.75rem;
+      box-shadow: 0 2px 12px rgba(0,0,0,.06);
+      border-left: 4px solid var(--or);
+    }
+    .step__num {
+      width: 2.4rem; height: 2.4rem; border-radius: 50%;
+      background: var(--vert); color: var(--or);
+      font-family: var(--font-serif); font-size: 1.2rem; font-weight: 600;
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0;
+    }
+    .step__content { flex: 1; }
+    .step__title { font-weight: 600; font-size: 1.05rem; margin-bottom: .4rem; color: var(--vert); }
+    .step__text { color: var(--gris); line-height: 1.7; font-size: .95rem; }
+    .step__highlight {
+      display: inline-block; background: var(--ivoire); border: 1px solid rgba(201,169,110,.3);
+      border-radius: 4px; padding: .15rem .5rem; font-family: monospace; font-size: .88rem;
+      color: var(--vert); margin: .2rem 0;
+    }
+    .step__tag {
+      display: inline-block; background: var(--vert); color: var(--or);
+      border-radius: 4px; padding: .2rem .65rem; font-size: .78rem; font-weight: 600;
+      margin-top: .5rem;
+    }
+
+    /* SECTIONS */
+    .sections { max-width: 760px; margin: 0 auto; padding: 0 1.5rem 4rem; }
+    .sections__title { font-family: var(--font-serif); font-size: 1.8rem; color: var(--vert); text-align: center; margin-bottom: .75rem; font-weight: 600; }
+    .sections__sub { text-align: center; color: var(--gris); margin-bottom: 2rem; font-size: .95rem; }
+
+    .section-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+    @media (max-width: 560px) { .section-grid { grid-template-columns: 1fr; } }
+
+    .section-card {
+      background: var(--blanc); border-radius: 10px; padding: 1.25rem 1.5rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,.05);
+      border-top: 3px solid var(--or);
+    }
+    .section-card__icon { font-size: 1.4rem; margin-bottom: .5rem; }
+    .section-card__title { font-weight: 600; font-size: .95rem; color: var(--vert); margin-bottom: .3rem; }
+    .section-card__desc { font-size: .85rem; color: var(--gris); line-height: 1.6; }
+
+    /* CTA FINAL */
+    .cta-final {
+      background: var(--vert); text-align: center; padding: 3.5rem 2rem;
+    }
+    .cta-final__title { font-family: var(--font-serif); color: var(--blanc); font-size: 1.8rem; margin-bottom: .75rem; }
+    .cta-final__sub { color: rgba(255,255,255,.7); margin-bottom: 2rem; font-size: .95rem; }
+
+    /* TIP */
+    .tip { background: rgba(201,169,110,.12); border: 1px solid rgba(201,169,110,.3); border-radius: 8px; padding: 1rem 1.25rem; margin-top: 1rem; font-size: .88rem; color: var(--texte); line-height: 1.6; }
+    .tip strong { color: var(--vert); }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <a href="index.html" class="header__logo">
+      LK <span>AVOCAT</span>
+    </a>
+    <a href="/admin/" class="header__link">Ouvrir l'admin →</a>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <p class="hero__eyebrow">Votre espace de gestion</p>
+    <h1 class="hero__title">Modifier votre site,<br><em>c'est simple.</em></h1>
+    <p class="hero__sub">En 4 étapes et 2 minutes, vous mettez à jour n'importe quel texte de votre site — sans connaissance technique.</p>
+    <a href="/admin/" class="btn-primary">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
+      Modifier mon site maintenant
+    </a>
+  </section>
+
+  <!-- ÉTAPES -->
+  <section class="steps">
+    <h2 class="steps__title">Comment ça marche ?</h2>
+
+    <div class="step">
+      <div class="step__num">1</div>
+      <div class="step__content">
+        <p class="step__title">Ouvrez votre espace d'administration</p>
+        <p class="step__text">
+          Allez sur <span class="step__highlight">/admin</span> de votre site — ou cliquez directement sur le bouton ci-dessus.<br>
+          Pensez à mettre cette page en favori dans votre navigateur !
+        </p>
+        <div class="tip"><strong>Conseil :</strong> Bookmarkez cette page guide aussi — vous pourrez toujours y revenir si vous avez un doute.</div>
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="step__num">2</div>
+      <div class="step__content">
+        <p class="step__title">Connectez-vous avec votre email et mot de passe</p>
+        <p class="step__text">
+          Entrez votre email et le mot de passe que vous avez choisi lors de votre première connexion.<br>
+          Votre navigateur s'en souvient — vous n'aurez à le faire qu'une seule fois.
+        </p>
+        <div class="tip"><strong>Mot de passe oublié ?</strong> Cliquez sur "Mot de passe oublié" sur la page de connexion. Vous recevrez un email de réinitialisation.</div>
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="step__num">3</div>
+      <div class="step__content">
+        <p class="step__title">Choisissez la section à modifier</p>
+        <p class="step__text">
+          Cliquez sur <strong>"Informations du cabinet"</strong>, puis déroulez la section que vous souhaitez mettre à jour :<br><br>
+          — <strong>Avocate</strong> : votre nom, biographie, diplômes, photo<br>
+          — <strong>Coordonnées</strong> : téléphone, email, adresse, horaires<br>
+          — <strong>Page Copropriété</strong> : tous les textes de cette page<br>
+          — <strong>Page Transition énergétique</strong> : tous les textes de cette page<br>
+          — <strong>Informations légales</strong> : SIRET, adresse légale
+        </p>
+        <span class="step__tag">Tout est en français, tout est expliqué</span>
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="step__num">4</div>
+      <div class="step__content">
+        <p class="step__title">Modifiez, puis cliquez sur "Publier"</p>
+        <p class="step__text">
+          Cliquez dans le champ que vous souhaitez modifier, changez le texte, puis cliquez sur le bouton bleu <strong>"Publier"</strong> en haut à droite.<br><br>
+          C'est tout. Votre site se met à jour automatiquement en <strong>30 secondes</strong>.
+        </p>
+        <div class="tip"><strong>Pas de panique :</strong> si vous faites une erreur, vous pouvez corriger et republier autant de fois que vous voulez.</div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- CE QUE VOUS POUVEZ MODIFIER -->
+  <section class="sections">
+    <h2 class="sections__title">Ce que vous pouvez modifier</h2>
+    <p class="sections__sub">Tout le contenu de votre site est entre vos mains.</p>
+
+    <div class="section-grid">
+      <div class="section-card">
+        <div class="section-card__icon">👩‍⚖️</div>
+        <p class="section-card__title">Votre profil</p>
+        <p class="section-card__desc">Nom, titre, biographie, diplômes et formations, photo professionnelle.</p>
+      </div>
+      <div class="section-card">
+        <div class="section-card__icon">📞</div>
+        <p class="section-card__title">Vos coordonnées</p>
+        <p class="section-card__desc">Téléphone, email, adresse du cabinet, horaires d'ouverture.</p>
+      </div>
+      <div class="section-card">
+        <div class="section-card__icon">📊</div>
+        <p class="section-card__title">Chiffres clés</p>
+        <p class="section-card__desc">Années d'expérience, dossiers traités, taux de satisfaction.</p>
+      </div>
+      <div class="section-card">
+        <div class="section-card__icon">💬</div>
+        <p class="section-card__title">Témoignages clients</p>
+        <p class="section-card__desc">Les 3 avis clients affichés sur la page d'accueil.</p>
+      </div>
+      <div class="section-card">
+        <div class="section-card__icon">🏢</div>
+        <p class="section-card__title">Page Copropriété</p>
+        <p class="section-card__desc">Titres, descriptions, 6 cartes d'intervention, 5 FAQ, bouton d'appel à l'action.</p>
+      </div>
+      <div class="section-card">
+        <div class="section-card__icon">⚡</div>
+        <p class="section-card__title">Page Transition énergétique</p>
+        <p class="section-card__desc">Titres, 2 paragraphes d'intro, 6 cartes, 5 FAQ, bouton d'appel à l'action.</p>
+      </div>
+      <div class="section-card">
+        <div class="section-card__icon">📋</div>
+        <p class="section-card__title">Mentions légales</p>
+        <p class="section-card__desc">SIRET, adresse légale, email, date de mise en vigueur.</p>
+      </div>
+      <div class="section-card">
+        <div class="section-card__icon">🖼️</div>
+        <p class="section-card__title">Photo professionnelle</p>
+        <p class="section-card__desc">Uploadez directement votre photo depuis l'espace d'administration.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section class="cta-final">
+    <h2 class="cta-final__title">Prête à modifier votre site ?</h2>
+    <p class="cta-final__sub">Votre espace d'administration vous attend.</p>
+    <a href="/admin/" class="btn-primary">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
+      Ouvrir l'espace d'administration
+    </a>
+  </section>
+
+</body>
+</html>
