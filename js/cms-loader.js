@@ -6,7 +6,7 @@
 
   let data;
   try {
-    const [avocate, contact, stats, temoignages, copropriete, energie, legal] = await Promise.all([
+    const [avocate, contact, stats, temoignages, copropriete, energie, legal, cabinet, accueil, global] = await Promise.all([
       fetch('/data/avocate.json').then(r => r.json()),
       fetch('/data/contact.json').then(r => r.json()),
       fetch('/data/stats.json').then(r => r.json()),
@@ -14,8 +14,11 @@
       fetch('/data/copropriete.json').then(r => r.json()),
       fetch('/data/energie.json').then(r => r.json()),
       fetch('/data/legal.json').then(r => r.json()),
+      fetch('/data/cabinet.json').then(r => r.json()),
+      fetch('/data/accueil.json').then(r => r.json()),
+      fetch('/data/global.json').then(r => r.json()),
     ]);
-    data = { avocate, contact, stats, temoignages, copropriete, energie, legal };
+    data = { avocate, contact, stats, temoignages, copropriete, energie, legal, cabinet, accueil, global };
   } catch (e) {
     return; // Fallback silencieux : le texte HTML statique reste affiché
   }
