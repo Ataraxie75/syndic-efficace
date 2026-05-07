@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prompt — Forward Copilot</title>
+  <meta name="description" content="Détail du prompt Copilot pour gestionnaires de copropriété.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/detail.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container header__inner">
+      <a href="index.html" class="logo">
+        <span class="logo__chevron">›</span>
+        <span class="logo__text">FORWARD</span>
+      </a>
+      <a href="pack.html" class="btn btn--primary btn--sm">Accéder au pack — 29€</a>
+    </div>
+  </header>
+
+  <!-- BREADCRUMB + HERO -->
+  <section class="detail-hero" id="detail-hero">
+    <div class="container">
+      <nav class="breadcrumb" id="breadcrumb">
+        <a href="index.html">Accueil</a>
+        <span class="breadcrumb__sep">›</span>
+        <a href="#" id="breadcrumb-parcours">—</a>
+        <span class="breadcrumb__sep">›</span>
+        <span id="breadcrumb-titre">—</span>
+      </nav>
+      <div class="detail-hero__meta" id="detail-meta">
+        <!-- badges injectés par JS -->
+      </div>
+      <h1 class="detail-hero__title" id="detail-title">Chargement…</h1>
+      <p class="detail-hero__workflow" id="detail-workflow"></p>
+    </div>
+  </section>
+
+  <!-- BODY -->
+  <main class="detail-body container" id="detail-body">
+
+    <!-- CONTEXTE -->
+    <section class="detail-section">
+      <h2 class="detail-section__label">📍 Situation</h2>
+      <p class="detail-section__text" id="detail-contexte"></p>
+    </section>
+
+    <!-- USER STORY -->
+    <section class="detail-section">
+      <h2 class="detail-section__label">💡 Ce que ça vous apporte</h2>
+      <p class="detail-section__text detail-section__text--story" id="detail-story"></p>
+    </section>
+
+    <!-- PROMPT -->
+    <section class="detail-section">
+      <h2 class="detail-section__label">Le prompt Copilot</h2>
+      <p class="prompt-wow">Copiez ce prompt dans Copilot.<br>Résultat en 30 secondes — sans rédiger une seule ligne.</p>
+      <div id="detail-prompt-zone">
+        <!-- injecté par JS : prompt visible ou verrouillé -->
+      </div>
+    </section>
+
+    <!-- COMMENT UTILISER -->
+    <section class="detail-section" id="section-how">
+      <h2 class="detail-section__label">🛠 Comment l'utiliser</h2>
+      <ol class="detail-steps" id="detail-steps">
+        <!-- injecté par JS -->
+      </ol>
+    </section>
+
+    <!-- GARDE-FOU -->
+    <div class="detail-gardefou hidden" id="detail-gardefou">
+      <span class="detail-gardefou__icon">⚠️</span>
+      <p id="detail-gardefou-text"></p>
+    </div>
+
+    <!-- GAIN -->
+    <div class="detail-gain" id="detail-gain">
+      <span class="detail-gain__icon">⏱</span>
+      <span id="detail-gain-text"></span>
+    </div>
+
+    <!-- NAVIGATION ENTRE PROMPTS -->
+    <div class="detail-nav" id="detail-nav">
+      <button class="btn btn--ghost btn--sm" id="btn-prev">← Précédent</button>
+      <a href="#" class="detail-nav__back" id="btn-back-parcours">Retour au parcours</a>
+      <button class="btn btn--ghost btn--sm" id="btn-next">Suivant →</button>
+    </div>
+
+  </main>
+
+  <!-- CTA PAYANT (affiché si prompt verrouillé) -->
+  <div class="detail-cta-band hidden" id="detail-cta-band">
+    <div class="container detail-cta-band__inner">
+      <div>
+        <p class="detail-cta-band__title">Ce prompt est réservé au pack complet</p>
+        <p class="detail-cta-band__sub">Accédez aux 84 prompts pour 29€ — achat unique, accès immédiat.</p>
+      </div>
+      <a href="pack.html" class="btn btn--white">Obtenir le pack — 29€ →</a>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span class="footer__copy">© Forward — Consultant Microsoft Copilot</span>
+      <nav class="footer__nav">
+        <a href="mentions-legales.html">Mentions légales</a>
+        <a href="politique-confidentialite.html">Politique de confidentialité</a>
+        <a href="mailto:contact@forward-copilot.fr">Contact</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="js/prompts.js"></script>
+  <script src="js/detail.js"></script>
+</body>
+</html>
